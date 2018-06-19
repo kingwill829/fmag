@@ -1,37 +1,9 @@
 <?php
 	$site_root = $_SERVER['DOCUMENT_ROOT'];
-	$include_header = $site_root . "/fmag-master/includes/header.php";
-	$include_nav = $site_root . "/fmag-master/includes/nav.php";
-?>
+	$include_header = $site_root . "/fmag/includes/header.php";
+	$include_nav = $site_root . "/fmag/includes/nav.php";
+	$include_footer = $site_root . "/fmag/includes/footer.php";
 
-<!doctype html>
-
-<!DOCTYPE html>
-<html class="no-js no-svg">
-<head>
-<meta charset="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-
-
-<link rel="stylesheet" href="https://www.findmeagift.co.uk/site_media/css/site.compressed.v2135.css">
-
-<link rel="stylesheet" href="../core_assets/footer.css" type="text/css" />
-<link rel="stylesheet" href="../core_assets/style.css" type="text/css" />
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="scripts.js"></script>
-
-
-</head>
-
-<body>
-
-
-<?php 
 	include_once($include_header); 
 	include_once($include_nav);
 ?>
@@ -185,7 +157,7 @@
 	<div class="col-md-12">
 		<div class="product-info">
 			<div class="product-info__desktop-nav">
-				<div class="product-info__desktop-nav-item" rel="product-description">
+				<div class="product-info__desktop-nav-item product-info__desktop-nav-item--active" rel="product-description">
 					Product Description
 				</div>
 				<div class="product-info__desktop-nav-item" rel="product-info">
@@ -196,11 +168,15 @@
 				</div>				
 			</div>
 
-
 			<div class="product-info__item product-info__item--active" id="product-description">
 				<div class="product-info__item-header" rel="product-description">
 					<h2>Product Description</h2>
-					<span class="fa fa-minus"></span>
+					<div class="product-info__item-icon open">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
 				</div>
 				<div class="product-info__item-detail">
 					<h3>Exercitation ullamco laboris</h3>
@@ -213,7 +189,12 @@
 			<div class="product-info__item" id="product-info">
 				<div class="product-info__item-header" rel="product-info">
 					<h2>Key Info</h2>
-					<span class="fa fa-plus"></span>
+					<div class="product-info__item-icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
 				</div>
 				<div class="product-info__item-detail">
 					<ul>
@@ -226,7 +207,12 @@
 			<div class="product-info__item" id="product-video">
 				<div class="product-info__item-header" rel="product-video">
 					<h2>Product Video</h2>
-					<span class="fa fa-plus"></span>
+					<div class="product-info__item-icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
 				</div>
 				<div class="product-info__item-detail">
 					<div class="video-container">
@@ -241,8 +227,6 @@
 
 </div>
 
-<footer>
-</footer>
-
-
-</body>
+<?php
+	include_once($include_footer);
+?>

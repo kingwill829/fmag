@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html class="no-js no-svg">
+<head>
+<meta charset="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="https://www.findmeagift.co.uk/site_media/css/site.compressed.v2135.css">
+
+<link rel="stylesheet" href="../core_assets/product-page.css" type="text/css" />
+<link rel="stylesheet" href="../core_assets/footer.css" type="text/css" />
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+
+
+</head>
+
+<body>
+	
 	<div class="band-head">
 		<div class="container">
 			<div class="masthead">

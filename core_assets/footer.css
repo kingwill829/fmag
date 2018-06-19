@@ -1,3 +1,5 @@
-footer {
-	height:300px;
+#footer {
+	min-height:400px;
+	margin-top:16px;
+	background-color:#f5f5f5;
 }
