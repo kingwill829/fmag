@@ -11,8 +11,7 @@
 
 <link rel="stylesheet" href="https://www.findmeagift.co.uk/site_media/css/site.compressed.v2135.css">
 
-<link rel="stylesheet" href="../core_assets/product-page.css" type="text/css" />
-<link rel="stylesheet" href="../core_assets/footer.css" type="text/css" />
+<link rel="stylesheet" href="../core_assets/css/style.css" type="text/css" />
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -19,7 +19,13 @@ $(document).ready(function(){
 				// Add active class to desktop prod desc menu items on click
 			  $('.product-info__desktop-nav-item').removeClass('product-info__desktop-nav-item--active');
 				$('.product-info__desktop-nav-item[rel="' + productInfoItem + '"]').addClass('product-info__desktop-nav-item--active');
-
+				
+				// if mobile scroll to active item
+				if ( $(window).width() < 768 ) {
+			    $('html, body').animate({
+			        scrollTop: $(productInfoItemID).offset().top
+			    }, 500);
+			  }
 			} // end else
 			
 		}); // end click function

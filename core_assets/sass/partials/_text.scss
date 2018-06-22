@@ -1,0 +1,17 @@
+/* Text */
+p {
+	margin-bottom:$df_pad;
+}
+
+
+/* Lists */
+.default-list li {
+    padding-left: 1em;
+    text-indent: -.7em;
+    line-height: 1.4em;
+}
+.default-list li:before {
+    content: '\2022';
+    color: #f15b29;
+    padding-right: 5px;
+}
