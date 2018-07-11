@@ -10,7 +10,19 @@
 
 <div class="container mart_d">
 	<div class="col-sm-6 col-md-6">
-		<img src="https://resources1.findmeagift.com/site_media/images/products/p_main/ccp120-star-wb-amz-1001x1001.jpg" />
+		<div class="product-image">
+			<div class="product-image__main">
+				<img src="https://resources1.findmeagift.com/site_media/images/products/p_main/ccp120-star-wb-amz-1001x1001.jpg" />
+			</div>
+			<div class="product-image__thumbnails">
+				<div class="product-image__thumb">
+					<img src="https://resources1.findmeagift.com/site_media/images/products/p_main/ccp120-star-wb-amz-1001x1001.jpg" />
+				</div>
+				<div class="product-image__thumb">
+					<img src="https://resources1.findmeagift.com/site_media/images/products/p_main/ccp120-star-wb-amz-1001x1001.jpg" />
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="col-sm-6 col-md-6">
 		<div class="product-detail">
@@ -19,60 +31,84 @@
 					<h1>Name a Star Gift Set</h1>
 
 					<div class="product-rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">		<meta itemprop="ratingValue" content="4.780104">	
-						<span class="no-wrap marr_h">
+						<span class="no-wrap">
 							<span class="fa fa-star"></span> 
 							<span class="fa fa-star"></span> 
 							<span class="fa fa-star"></span> 
 							<span class="fa fa-star"></span> 
 							<span class="fa fa-star"></span>
 						</span> 
-						<span href="#reviews" class="no-wrap"><span itemprop="reviewCount">(573)</span></span>
+						<span href="#reviews" class="no-wrap co"><span itemprop="reviewCount">(573)</span></span>
 					</div>
 
 				</div>
 
 				<div class="product-detail__price">
-					<div class="product-detail__price--main marb_h"><span>&pound;</span>7.99</div>
+					<div class="product-detail__price--main product-detail__price--main-sale marb_h"><span>&pound;</span>7.99</div>
 					<div class="product-detail__price--was marb_h">was &pound;<span>12.99</span></div>
-					<div class="product-detail__price--save marb_h tac">SAVE 30%</div>
 				</div>
 			</div>
+			<div class="product-detail__price--save marb_h tac">SAVE 30%</div>
+			<div style="clear:both"></div>
 		</div>
 
 		<div class="product-detail">
 			<div class="product-detail__buy">
 				<div class="product-detail__input-text">
-					<label>Please enter the recipient's name <span class="fa fa-info"></span></label>
+					<label>Please enter the recipient's name</label>
 					<input type="text" placeholder="Recipient Name" class="marb_h" />
 				</div>
-				<button class="product-detail__buy-button marb_d">Add to basket</button>
-				
-				<div class="product-detail__quantity">
-					<div class="product-detail__quantity-minus">
-						<span class="fa fa-minus"></span>
-					</div>
-					<div class="product-detail__quantity-value">
-						1
-					</div>
-					<div class="product-detail__quantity-plus">
-						<span class="fa fa-plus"></span>
-					</div>
+				<button class="product-detail__buy-button button__cta marb_d">Add to basket <span class="fa fa-chevron-right"></span></button>
+			</div>
+			<div class="product-detail__quantity marb_h">
+				<div class="product-detail__quantity-minus">
+					<span class="fa fa-minus"></span>
+				</div>
+				<div class="product-detail__quantity-value">
+					1
+				</div>
+				<div class="product-detail__quantity-plus">
+					<span class="fa fa-plus"></span>
+				</div>
+			</div>
+
+			<div class="product-detail__info">
+				<div class="product-detail__info-item product-detail__stock marb_h">
+					<span class="fa fa-check cg">&nbsp;</span>In Stock
 				</div>
 
-				<div class="product-detail__wishlist marb_h">
-					<span class="fa fa-heart-o"></span> Add to wishlist
+				<div class="product-detail__info-item product-detail__stock marb_h">
+					<span class="fa fa-times co">&nbsp;</span>Temporarily Unavailable
 				</div>
 
-				<div class="product-detail__low-stock marb_h">
-					<span><i class="fa fa-shopping-cart"></i>&nbsp;Low on Stock - Checkout Now!</span>
+				<div class="product-detail__info-item product-detail__oos marb_h">
+					<span class="fa fa-times cr">&nbsp;</span>Out of Stock
 				</div>
-				<div class="marb_d">	
-					<span class="no-wrap">
-						<span class="delivery-icon fas fa-shipping-fast fa-flip-horizontal marr_h"></span>Dispatched with 48 hours
-					</span>	
+
+				<div class="product-detail__info-item product-detail__low-stock marb_h cr">
+					<span class="fa fa-shopping-cart">&nbsp;</span>Low on Stock - Checkout Now!
+				</div>
+
+				<div class="product-detail__info-item product-detail__wishlist marb_h">
+					<span class="fa fa-heart-o">&nbsp;</span>Add to wishlist
+				</div>
+
+				<div class="product-detail__info-item product-detail__dispatch marb_d">
+					<span class="fas fa-shipping-fast">&nbsp;</span>Dispatched with 48 hours
+				</div>
+
+				<div class="product-detail__social marb_d">
+					<span class="fa fa-whatsapp"></span>
+					<span class="fa fa-facebook"></span>
+					<span class="fa fa-twitter"></span>
+					<span class="fa fa-instagram"></span>
+					<span class="fa fa-pinterest"></span>
 				</div>
 			</div>
 		</div>
+	
+
+
 
 		<div class="product-recommendations">
 			<h2 class="tac">You might also like</h2>
