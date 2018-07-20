@@ -1,3 +1,59 @@
+body {
+	font-size:$df_font;
+	font-family: $mainfont;
+	letter-spacing: 0;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+
+
+p {
+	font-size:$df_font;
+	line-height:1.5em;
+}
+strong {font-weight:bold;}
+a,h1,h2,h3,h4,div {
+	line-height:1.5em;
+}
+h1,h2,h3,h4 {
+	font-family:verlag;
+	margin-bottom:$df_mar;
+}
+
+h1 {
+	font-size:1.6em;
+	line-height:1.166666666em;
+	}
+h2 {
+	font-size:1.3em;
+	line-height:1em;
+	}
+h3, h4 {
+	font-size:1.1em;
+	line-height:1.2;
+	}
+
+/* Links */
+a {
+	color:$orange;
+	text-decoration:none;
+}
+a:hover {
+	cursor:pointer;
+	text-decoration:underline;
+}
+
+section {
+	clear:both;
+} 
+
+/*
+h1,h2,h3,h4,ul,button,input,select {margin-bottom:$df_mar;}
+p,h1,h2,h3,h4,ul,li,button,input {color:$df_color;}
+*/
+
+
 /* Text */
 p {
 	margin-bottom:$df_pad;

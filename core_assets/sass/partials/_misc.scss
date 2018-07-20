@@ -1,0 +1,316 @@
+
+.contact-info {
+	padding: $df_pad 0;
+	border-bottom: $border_d;
+}
+
+.information-sidebar {
+	border:$border_d;
+	padding:$df_pad;
+}
+.information-sidebar h2 {
+	padding-bottom:$df_pad_h;
+	border-bottom:$border_d;
+}
+.info-item-wrap a {
+	background-color: $light-grey;
+	display: block;
+	padding: $df_pad_h;
+	font-size: 1.3em;
+	color: $dark-grey;
+
+}
+.faq-header {
+	background-color: $light-grey;
+	padding: $df_pad_h;
+	border-top: 1px solid $dark-grey;
+}
+
+.job-details-preview {
+	border-top: 1px solid $light-grey;
+	line-height: 50px;
+}
+
+.show-on-request {
+	display:none;
+}
+
+.product-more {
+	background: url("/site_media/images/general/info.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+	margin-bottom:-4px;
+}
+
+
+
+.form-panel {
+	border: solid 1px $light-grey;
+	padding: 1em;
+	margin-bottom: $df_mar;
+	min-height: 323px;
+}
+.login_panel {
+	min-height: 170px;
+}
+
+.category-links a {
+	display:block;
+	background-color: $light-grey;
+	color: $dark-grey;
+	margin-bottom: $df_mar;
+	padding: $df_pad $df_pad_h;
+	font-size: 1.1em;
+	line-height: 18px;
+}
+
+.category-links a:hover {
+	background-color: $dark-grey;
+	text-decoration: none;
+	color: $white;
+}
+
+.page-rating {
+	margin-bottom:$df_mar;
+}
+
+.thankyou-box{
+	margin-top:$df_mar;
+	padding:$df_pad;
+	background:$bggreen;
+}
+
+
+
+a.fa-facebook {
+	color:#3b5998; /* This is the FACEBOOK colour */
+}
+a.fa-twitter {
+	color:#00aced; /* This is the TWITTER colour */
+}
+a.fa-pinterest {
+	color:#c92228; /* This is the PINTEREST colour */
+}
+a.fa-google-plus {
+	color:#d34836; /* This is the GOOGLE colour */
+}
+a.fa-youtube {
+	color:#cd201f; /* This is the YOUTUBE colour */
+}
+
+/* Temporary Styling for Trust Pilot */
+#trustPilotBasket {
+ display:block!important;
+}
+.trustpilot-widget {
+ margin:16px 0px;
+}
+
+.trustpilot-widget-bottom-border {
+ padding-bottom:16px;
+ border-bottom: 1px solid #d5d6d8;
+}
+
+
+
+/* Colours for special offers pannel accross the site */
+.offer-3for2 {
+	background-color:#B11847;
+	color:$white;
+	z-index:1;
+}
+
+
+
+/* Daily Deals Page /deal-of-the-day/ */
+
+#sign-up-box-wrapper {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+#sign-up-box-wrapper:after {
+	padding-top: 50%;
+	display: block;
+	content: '';
+}
+#sign-up-box {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-image: url(/site_media/images/daily_deals/2017/daily-deals-signup.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: 100%;
+}
+@media screen and (max-width:670px) {
+	#sign-up-box {
+		background-image: url(/site_media/images/daily_deals/2017/daily-deals-signup-mobile.png);
+	}
+}
+
+.variableSize {		/* This element pads the boxes below inside the window (it saves having to absolutely position on each size) */
+	height: 33%;
+}
+#sign-up-box #email {
+	width:90%;
+}
+
+.button__daily_deals {
+	@extend button;
+	border:3px solid #ebcf8f;
+	background: #100013;
+	color:#ebcf8f;
+	width:90%;
+}
+
+
+#sign-up-box #email::placeholder {
+	text-align:center;
+}
+
+.daily-deals-timer {
+	border:3px solid #ebcf8f;
+	color:#c76060;
+	justify-content: space-evenly;
+
+	h2 {
+		color:#c76060;
+		font-weight: bolder;
+		font-size:2em;
+	}
+	#tp-social h2 {
+		color:#522433;
+	}
+	.fa {
+		font-size:2em;
+		margin:0px 10px;
+	}
+	#tp-social a {
+		color:#c76060
+	}
+	#tp-social a:hover {
+		color:#522433
+	}
+}
+
+.daily-deals-timer__counter {
+	color:#3c2a2e;
+	font-weight: bolder;
+	font-size:2em;
+}
+
+
+@media screen and (min-width:$min_sm) {
+	#sign-up-box #email,
+	.button__daily_deals {
+		width:60%;
+	}
+	.daily-deals-timer {
+		height:316px;
+	}
+}
+
+@media screen and (min-width:$min_lg) {
+	.daily-deals-timer {
+		height:382px;
+	}
+}
+
+
+/* Newsletter popup panel*/
+.newsletter_popup_outer {
+	background-color:transparent!important;
+	background-image: url(/site_media/images/general/newsletter-signup3.png)!important;
+	background-size: 100% 100%!important;
+	height:582px!important;
+	width:582px!important;
+	text-align:center!important;
+	opacity: 0.9!important;
+}
+
+#newsletter_popup_form {
+	margin-top:300px;
+}
+
+#newsletter_popup_form input {
+	margin-left:10%;
+	width:60%;
+	float:left;
+	-webkit-appearance: none;
+	border:1px solid $light-grey;
+	border-right:0px;
+	padding-left:5px;
+}
+#newsletter_popup_form button {
+	width:20%;
+	float: left;
+	background-color:$dark-grey;
+	color:white;
+	display: -webkit-box;	/* OLD - iOS 6-, Safari 3.1-6, BB7 */
+	display: -ms-flexbox;	/* TWEENER - IE 10 */
+	display: -webkit-flex;	/* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+	display: flex;			/* NEW, Spec - Firefox, Chrome, Opera */
+	height: 48px;
+	text-align: center;
+	span {
+		flex: 1;
+		display: -webkit-box;	/* OLD - iOS 6-, Safari 3.1-6, BB7 */
+		display: -ms-flexbox;	/* TWEENER - IE 10 */
+		display: -webkit-flex;	/* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+		display: flex;			/* NEW, Spec - Firefox, Chrome, Opera */
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+.newsletter_no_thanks {
+	padding-top: 195px;
+	font-style:italic;
+	font-size:0.9em;
+	a {
+		color: $white;
+		text-decoration:underline;
+	}
+	a:hover {
+		text-decoration:none;
+	}
+}
+
+.newsletter_close {
+	padding-top:20px;
+	font-size:0.6em;
+	a {
+		color: $white;
+		text-decoration:none;
+	}
+	a:hover {
+		text-decoration:underline;
+	}
+}
+
+/* Offer popup panel*/
+.offer_popup_outer {
+	background-color:transparent!important;
+	/*background-image: url(/site_media/images/general/offer2.png)!important;*/
+	background-size: 100% 100%!important;
+	height:582px!important;
+	width:582px!important;
+	text-align:center!important;
+	opacity: 0.9!important;
+}
+
+.offer_close{
+	padding-top:540px;
+	font-size:0.6em;
+	a {
+		color: $white;
+		text-decoration:none;
+	}
+	a:hover {
+		text-decoration:underline;
+	}
+}

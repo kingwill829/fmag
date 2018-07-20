@@ -1,0 +1,88 @@
+input[type='text'],
+input[type='number'],
+input[type='email'],
+textarea, select {
+	font-size: $df_font;
+	min-height:48px;
+}
+
+input, textarea, select {
+	padding:$df_pad_h;
+	border: 1px solid $med-grey;
+	font: 0.9em Arial;
+	height:48px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	width:13px!important;
+	margin:0;
+	height:13px;
+}
+select optgroup:before {	/* Firefox hack */
+	font-weight:bold;
+	padding-left:$df_pad_h;
+}
+select option {				/* Firefox hack */
+	padding-left:$df_pad;
+}
+
+.checkout-form input, .checkout-form textarea, .checkout-form select{
+	border: 1px solid $light-grey;
+	width:100%;
+	margin-bottom:$df_mar;
+}
+
+.checkout-form input[type="radio"] {
+	display:none;
+}
+.checkout-form label {
+	font-family:verlag;
+	margin-bottom:$df_mar_h;
+	display:block;
+}
+
+.checkout-form label label {
+	font-size:inherit;	/*Prevents labels within labels being 1.2 x 1.2 */
+}
+
+.checkout-form label.label_il {
+	padding-left:$df_pad_h;
+	display:inline;
+}
+.form-error label.validate_highlight,
+.form-error label.validate_positive,
+.form-error label.validate_negative {
+	margin-bottom:0;
+}
+
+.form-error {
+	color:$med-red;
+	position:relative;
+	top:-$df_mar;
+	left:4px;
+}
+
+.input-label {
+	font-size:1em;
+	margin:$df_mar 0 0 0;
+	display:block;
+	float:left;
+}
+.input-area {
+	height:185px;
+}
+
+.error-message {
+	padding:5px;
+	background-color:$bgorange;
+	border:solid 1px $orange;
+	display:none;
+	font-weight:bold;
+}
+.success-message {
+	padding: 5px;
+	background-color: $bggreen;
+	border: solid 1px $green;
+	display: none;
+	font-weight: bold;
+}

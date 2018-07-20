@@ -1,0 +1,106 @@
+
+
+
+button {
+	border:0px;
+	font-family:verlag;
+	padding:0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius:3px;
+	min-height:48px;
+	width:100%;
+	font-size:1.05em;
+	background-color:$light-grey;
+	.fa {
+		font-size:0.8em;
+		padding-left:4px;
+	}
+}
+button:hover {
+	cursor:pointer;
+	opacity:0.9;
+}
+button:focus {
+	outline:0;
+	opacity:0.8;
+}
+
+
+.button__cta {
+	@extend button;
+	background: $green;
+	background: -webkit-linear-gradient(#00dc69, $green);
+	background: -o-linear-gradient(#00dc69, $green);
+	background: -moz-linear-gradient(#00dc69, $green);
+	background: linear-gradient(#00dc69, $green);
+	color:white;
+}
+.button__sub {
+	@extend button;
+	background-color:$orange;
+	color:white;
+}
+.button__b {
+	@extend button;
+	background-color:$blue;
+	color:white;
+}
+.button__gy {
+	@extend button;
+	color:$dark-grey;
+}
+
+
+.button__yes {
+	@extend .button__cta;
+	width:30%;
+	min-width:90px;
+}
+.button__no {
+	@extend button;
+	background: $med-red;
+	background: -webkit-linear-gradient(#DB2828, $med-red);
+	background: -o-linear-gradient(#DB2828, $med-red);
+	background: -moz-linear-gradient(#DB2828, $med-red);
+	background: linear-gradient(#DB2828, $med-red);
+	color:white;
+	width:30%;
+	min-width:90px;
+}
+
+.button__paypal {	/*PayPal Blue button*/
+	@extend button;
+	background: #007CB1;
+	background: -webkit-linear-gradient(#00B1FD, #007CB1);
+	background: -o-linear-gradient(#00B1FD, #007CB1);
+	background: -moz-linear-gradient(#00B1FD, #007CB1);
+	background: linear-gradient(#00B1FD, #007CB1);
+	color:white;
+	div {
+		padding-right: 3px;
+    	margin-top: 2px;
+	}
+}
+
+label.button_style {
+	@extend button;
+	display:block;
+	font-size:1em;
+	font-family:verlag;
+	padding:$df_pad_h $df_pad;
+	line-height:32px;
+	min-height:48px;
+	margin-bottom:$df_mar;
+
+	img {
+		vertical-align:middle;
+		height:32px;
+		margin-top:-4px;
+	}
+}
+
+button.wait {
+ 	cursor: wait;
+}
+

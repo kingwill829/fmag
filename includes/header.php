@@ -1,22 +1,31 @@
+<?php
+	$include_nav = $site_root . "/fmag/includes/nav.php";
+	$include_footer = $site_root . "/fmag/includes/footer.php";
+	$include_css = "http://localhost:81/fmag/core_assets/css/style.css";
+	$include_js = "http://localhost:81/fmag/core_assets/js/site.js";
+
+?>
+
 <!DOCTYPE html>
 <html class="no-js no-svg">
 <head>
-<meta charset="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<meta charset="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
 
 
-
-<link rel="stylesheet" href="https://www.findmeagift.co.uk/site_media/css/site.compressed.v2135.css">
-
-<link rel="stylesheet" href="../core_assets/css/style.css" type="text/css" />
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="scripts.js"></script>
-
+	<link rel="stylesheet" href="<?php echo($include_css); ?>" type="text/css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="<?php echo($include_js); ?>" type="text/javascript"></script>
+	
+	
+	<!-- Slick Slider -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
@@ -27,7 +36,7 @@
 			<div class="masthead">
 
 				<div class="masthead__logo">
-					<a href="/">
+					<a href="/fmag/">
 						<picture>
 						  <source type="image/svg+xml" srcset="https://www.findmeagift.co.uk/site_media/images/general/fmag-logo.svg">
 						  <img src="https://www.findmeagift.co.uk/site_media/images/general/fmag-logo-checkout.png" alt="Find Me A Gift Logo" title="Find Me A Gift" width="392" height="59">

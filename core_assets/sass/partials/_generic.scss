@@ -1,0 +1,333 @@
+/*
+_ 			: Single underscore			: Seperates descriptive elements in the class [ _0, _d & _h are used for none, default or half classes]
+__			: Double underscore			: Extension/refinement of a previous class
+-			: Hyphen					: Device or screen size specific (Not bootstrap), should only be a limited set of possibilities
+					-d / -m		: Change at 768px wide [desktop / mobile]
+					-l / -t		: Change at 992px wide [large / tablet]
+_i			: used to that this is a version of the parent class with !important (not all uses are setup this way yet)
+*/
+
+/* ###################### Colours ###################### */
+.cd {color:$df_color;}
+
+.cg{color:$green;}								/*Green*/
+.cw{color:$white;}								/*White*/
+.co{color:$orange!important;}					/*Orange*/
+.co:visited{color:$orange;font-size:40px;}		/*Orange Visited*/
+.cr{color:$med-red;}							/*Red*/
+.cr:visited{color:$med-red;}					/*Red Visited*/
+
+.clg {color:$light-grey;}						/*Light Grey*/
+.cmg {color:$med-grey;}							/*Medium Grey*/
+.cdg {color:$dark-grey;}						/*Dark Grey*/
+
+.bco {background-color:$orange;}				/*Background Orange*/
+.bcg {background-color:$green;}					/*Background Green*/
+.bcr{background-color:$med-red;}				/*Background Red*/
+.bcb{background-color:$blue;} 					/*Background Blue*/
+.bclg {background-color:$light-grey;}
+.bcmg {background-color:$med-grey;}
+.bcdg {background-color:$dark-grey;}
+.bcf{background-color:$bggrey;} 		/*Background Colour faint*/
+
+
+/* ###################### Fonts ###################### */
+.f-OS {font-family:$mainfont}
+.f-hf {font-family:$headerfont}
+.fsi{font-size:inherit!important;} /* Useful to stop double-sizing */
+.fs0-6{font-size:0.6em}	/* VERY small - should only be used in *special* circumstances */
+.fs0-8{font-size:0.8em}
+.fs1{font-size:1em}
+.fs1_i{font-size:1em!important;}
+.fs1-1{font-size:1.1em}
+.fs1-2{font-size:1.2em}
+.fs1-3{font-size:1.3em}
+.fs1-4{font-size:1.4em}
+.fs1-5{font-size:1.5em}
+.fs1-6{font-size:1.6em}
+.fs1-7{font-size:1.7em}
+.fs1-9{font-size:1.9em}
+.fs2{font-size:2em}
+.fs2i{font-size:2em!important;}
+.fs2-5{font-size:2.5em}
+.fs3{font-size:3em}
+.fs3{font-size:3em}
+
+
+/* ###################### Text ###################### */
+.ital{font-style:italic}
+.bld,.bold{font-weight:bold}
+.fwn{font-weight:normal;}
+.underline{text-decoration:underline}
+.line-through{text-decoration:line-through;}
+.no-wrap{white-space:nowrap;}
+.upcase{text-transform:uppercase;}
+
+.tal{text-align:left;}
+.tac{text-align:center;}
+.tar{text-align:right;}
+.taj{text-align:justify}
+/*		Only on set sizes */
+.tac-m {@media screen and (max-width: $max_xs) {text-align:center;}}
+.tac-d {@media screen and (min-width: $min_sm) {text-align:center;}}
+.tar-d {@media screen and (min-width: $min_sm) {text-align:right;}}
+
+.vat{vertical-align:top}
+.vam{vertical-align:middle}
+.vab{vertical-align:bottom}
+.vatt{vertical-align:text-top}
+
+.indent{margin-left:25px;}
+
+
+/* ###################### Floating ###################### */
+.fl{float:left;}
+.fr{float:right;}
+.fli{float:left!important;}
+.fri{float:right!important;}
+/*		Only on set sizes */
+.fl-d {@media screen and (min-width: $min_sm) {float:left;}}
+.fr-d {@media screen and (min-width: $min_sm) {float:right;}}
+.fl-m {@media screen and (max-width: $max_xs) {float:left;}}
+.fr-m {@media screen and (max-width: $max_xs) {float:right;}}
+
+.fr-xs {@media screen and (min-width: $min_xs) and (max-width: $max_xs) {float:right;}}
+.fr-sm {@media screen and (min-width: $min_sm) and (max-width: $max_sm) {float:right;}}
+.fr-md {@media screen and (min-width: $min_md) and (max-width: $max_md) {float:right;}}
+.fr-lg {@media screen and (min-width: $min_lg) {float:right;}}
+
+/* Clear */
+.cll{clear:left;}		/*This was called cl but renamed and its a bugger to find in files */
+.clr{clear:right;}
+.cln{clear:none;}
+.clear{clear:both;font-size:0;height:0;line-height:0;margin:0;padding:0;}
+.clear-d {@media screen and (min-width: $min_sm) {clear:both;font-size:0;height:0;line-height:0;margin:0;padding:0;}}
+.clear-m {@media screen and (max-width: $max_xs) {clear:both;font-size:0;height:0;line-height:0;margin:0;padding:0;}}
+.clear-l {@media screen and (min-width: $min_md) {clear:both;font-size:0;height:0;line-height:0;margin:0;padding:0;}}
+.clear-t {@media screen and (max-width: $max_sm) {clear:both;font-size:0;height:0;line-height:0;margin:0;padding:0;}}
+
+
+/*Clear Fix - clear probably does everything you need, try not to use the below */
+.clearfix:before,
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix {zoom: 1;margin: 0;padding: 0;/* IE < 8 */}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/* ###################### Display ###################### */
+.dil {display:inline;}
+.dilb {display:inline-block;}
+.dbl {display:block;}
+.dno {display:none;}
+.dif {display:flex;}
+/*		Only on set sizes */
+.dno-d {@media screen and (min-width: $min_sm) {display:none;}}
+.dno-m {@media screen and (max-width: $max_xs) {display:none;}}
+.dno-l {@media screen and (min-width: $min_md) {display:none;}}
+.dno-t {@media screen and (max-width: $max_sm) {display:none;}}
+
+.dno-es{@media screen and (max-width: $max_es) {display:none;}}
+.dno-xs{@media screen and (min-width: $min_xs) and (max-width:$max_xs) {display:none;}}
+.dno-sm{@media screen and (min-width: $min_sm) and (max-width:$max_sm) {display:none;}}
+.dno-md{@media screen and (min-width: $min_md) and (max-width:$max_md) {display:none;}}
+.dno-lg{@media screen and (min-width: $min_lg) {display:none;}}
+
+
+
+/* ###################### Margins ###################### */
+/* Margin: 0px */
+.mar_0 {margin:0;}
+.mar_0i {margin:0!important;}
+.mart_0 {margin-top:0px;}
+.marb_0 {margin-bottom:0px;}
+.marl_0 {margin-left:0px;}
+.marr_0 {margin-right:0px;}
+/* Margin: default */
+.mart_d{margin-top:$df_mar;}
+.marr_d{margin-right:$df_mar;}
+.marb_d{margin-bottom:$df_mar;}
+.marl_d{margin-left:$df_mar;}
+	.martb_d{@extend .mart_d;@extend .marb_d;}.marlr_d{@extend .marr_d;@extend .marl_d;}
+/* Margin: half */
+.mart_h{margin-top:$df_mar_h;}
+.marb_h{margin-bottom:$df_mar_h;}
+.marr_h{margin-right:$df_mar_h;}
+.marl_h{margin-left:$df_mar_h;}
+	.martb_h{@extend .mart_h;@extend .marb_h;}.marlr_h{@extend .marr_h;@extend .marl_h;}
+/*		Only on set sizes */
+.mart-d{@media screen and (min-width: $min_sm) {margin-top:$df_mar;}}
+.marr-d{@media screen and (min-width: $min_sm) {margin-right:$df_mar;}}
+.marb-d{@media screen and (min-width: $min_sm) {margin-bottom:$df_mar;}}
+.marl-d{@media screen and (min-width: $min_sm) {margin-left:$df_mar;}}
+	.martb-d{@extend .mart-d;@extend .marb-d;}.marlr-d{@extend .marr-d;@extend .marl-d;}.mara-d{@extend .martb-d;@extend .marlr-d;}
+.mart-m{@media screen and (max-width: $max_xs) {margin-top:$df_mar;}}
+.marr-m{@media screen and (max-width: $max_xs) {margin-right:$df_mar;}}
+.marb-m{@media screen and (max-width: $max_xs) {margin-bottom:$df_mar;}}
+.marl-m{@media screen and (max-width: $max_xs) {margin-left:$df_mar;}}
+	.martb-m{@extend .mart-m;@extend .marb-m;}.marlr-m{@extend .marr-m;@extend .marl-m;}
+/* tablet margins */
+.mart-t{@media screen and (max-width: $max_sm) {margin-top:$df_mar;}}
+.marr-t{@media screen and (max-width: $max_sm) {margin-right:$df_mar;}}
+.marb-t{@media screen and (max-width: $max_sm) {margin-bottom:$df_mar;}}
+.marl-t{@media screen and (max-width: $max_sm) {margin-left:$df_mar;}}
+
+/****special cases - may want to expand this to all sizes ****/
+.marr-md{@media screen and (min-width: $min_md) {margin-right:$df_mar;}}
+
+
+/* ###################### Padding ###################### */
+/* Padding: 0px */
+.pad_0 {padding:0px;}
+.padt_0 {padding-top:0px;}
+.padb_0 {padding-bottom:0px;}
+.padl_0 {padding-left:0px;}
+.padr_0 {padding-right:0px;}
+	.padtb_0{@extend .padt_0;@extend .padb_0;}.padlr_0{@extend .padr_0;@extend .padl_0;}.pada_0{@extend .padtb_0;@extend .padlr_0;}
+/* Padding: default */
+.padt_d{padding-top:$df_pad;}
+.padr_d{padding-right:$df_pad;}
+.padb_d{padding-bottom:$df_pad;}
+.padl_d{padding-left:$df_pad;}
+	.padtb_d{@extend .padt_d;@extend .padb_d;}.padlr_d{@extend .padr_d;@extend .padl_d;}.pada_d{@extend .padtb_d;@extend .padlr_d;}
+/* Padding: half default */
+.padt_h{padding-top:$df_pad_h;}
+.padr_h{padding-right:$df_pad_h;}
+.padb_h{padding-bottom:$df_pad_h;}
+.padl_h{padding-left:$df_pad_h;}
+	.padtb_h{@extend .padt_h;@extend .padb_h;}.padlr_h{@extend .padr_h;@extend .padl_h;}.pada_h{@extend .padtb_h;@extend .padlr_h;}
+/*		Only on set sizes */
+.padt-d{@media screen and (min-width: $min_sm) {padding-top:$df_pad;}}
+.padr-d{@media screen and (min-width: $min_sm) {padding-right:$df_pad;}}
+.padb-d{@media screen and (min-width: $min_sm) {padding-bottom:$df_pad;}}
+.padl-d{@media screen and (min-width: $min_sm) {padding-left:$df_pad;}}
+	.padtb-d{@extend .padt-d;@extend .padb-d;}.padlr-d{@extend .padr-d;@extend .padl-d;}.pada-d{@extend .padtb-d;@extend .padlr-d;}
+.padt-m{@media screen and (max-width: $max_xs) {padding-top:$df_pad;}}
+.padr-m{@media screen and (max-width: $max_xs) {padding-right:$df_pad;}}
+.padb-m{@media screen and (max-width: $max_xs) {padding-bottom:$df_pad;}}
+.padl-m{@media screen and (max-width: $max_xs) {padding-left:$df_pad;}}
+	.padtb-m{@extend .padt-m;@extend .padb-m;}.padlr-m{@extend .padr-m;@extend .padl-m;}
+/* Padding: special */
+.pad10 {padding:10px !important;}
+
+/* @@@@@@@@@@@@@@ These should only be used in an emergency @@@@@@@@@@@@ */
+.pad1{padding:1px!important;}.padlr1{padding:0 1px!important;}.padt1{padding-top:1px!important;}.padr1{padding-right:1px!important;}.padb1{padding-bottom:1px!important;}.padl1{padding-left:1px!important;}
+.pad5{padding:5px!important;}.padtb5{padding:5px 0!important;}.padlr5{padding:0 5px!important;}.padt5{padding-top:5px!important;}.padr5{padding-right:5px!important;}.padb5{padding-bottom:5px!important;}.padl5{padding-left:5px!important;}
+.pad10{padding:10px!important;}.padtb10{padding:10px 0!important;}.padlr10{padding:0 10px!important;}.padt10{padding-top:10px!important;}.padr10{padding-right:10px!important;}.padb10{padding-bottom:10px!important;}.padl10{padding-left:10px!important;}
+.padt14{padding-top:14px!important;}.padb14{padding-bottom:14px!important;}.padl14{padding-left:14px!important;}
+
+
+
+
+/* ###################### Fixed width & height ###################### */
+.wd_f {width:100%!important;}
+.wd_h {width:49%!important;}
+.wd_h2 {width:48%!important;}	/* For when 49% is a bit too much :) */
+.wd_q {width:25%!important;}
+/*		Only on set sizes */
+.wd_h-d {@media screen and (min-width: $min_sm) {width:49%!important;}}
+.wd_h-m {@media screen and (max-width: $max_xs) {width:49%!important;}}
+.wd_q-d {@media screen and (min-width: $min_sm) {width:25%!important;}}
+.wd_q-m {@media screen and (max-width: $max_xs) {width:25%!important;}}
+
+
+.nano2Width{width:20px}.nano3Width{width:25px}.nano4Width{width:30px}
+.micro1Width{width:50px}.micro2Width{width:60px}.micro3Width{width:70px}
+.tiny1Width{width:100px}.tiny2Width{width:125px}.smallWidth{width:150px}
+.mediumWidth{width:200px}.normalWidth{width:350px}.largeWidth{width:600px}.hugeWidth{width:800px}
+.qtrWidth{width:25%}.halfWidth{width:50%}.threeQtrWidth{width:75%}.fullWidth{width:100%!important;}.fullAWidth{width:99%}.fullAWidth2{width:98%}
+.per95Width{width:95%}
+.micro1Height{height:50px}.micro2Height{height:60px}.micro3Height{height:70px}.tiny1Height{height:100px}
+
+/* Fix for select box widths */
+select.nano2Width{width:25px}select.nano3Width{width:30px}select.nano4Width{width:35px}select.micro1Width{width:55px}select.micro2Width{width:65px}select.micro3Width{width:75px}select.tiny1Width{width:105px}select.tiny2Width{width:130px}select.smallWidth{width:155px}select.mediumWidth{width:205px}select.normalWidth{width:354px}select.largeWidth{width:605px}select.hugeWidth{width:805px}
+
+
+/* ###################### Borders ###################### */
+.border_0{border:none!important}
+.border_d{border:$border_d}
+.bordert_d{border-top:$border_d;}
+.borderb_d{border-bottom:$border_d;}
+
+
+/* ###################### Table ###################### */
+/* ###################### I would like to revise these inline with our new defaults ###################### */
+/* @@@ remove this if not used
+table{border-collapse:collapse;border-spacing: 0;}
+table th{padding:4px;text-align:left;font-weight:bold;}
+table td{padding:4px;}
+.tablepadspc0{border-spacing:0;border-collapse:collapse;}
+.tablepadspc0 th,.tablepadspc0 td{padding:0}
+.simple_table td{padding:4px;}
+.simple_table th{padding:4px;background-color:$light-grey;text-align:left;font-weight:bold;}
+.simple_table2 td{padding:4px}
+.simple_table2 th{padding:4px;text-align:left;font-weight:bold;border-bottom:1px solid $med-grey;}
+.simple_table3 td, .simple_table3 th{padding:0px}
+.pb4_table td{padding:0 0 4px 0;}
+.pb5_table td{padding:0 0 5px 0;vertical-align:top;}*/
+
+table{border-collapse:collapse;border-spacing: 0; margin-bottom: $df_mar_h}
+table th{padding-bottom:$df_pad_h;padding-top:$df_pad_h;text-align:left;font-weight:bold;border-bottom:1px solid $med-grey;}
+table td{padding-bottom:$df_pad_h;padding-top:$df_pad_h;border-bottom:1px solid $med-grey;}
+
+table.border_0 th, table.border_0 td {border:0!important;}
+table.pad_0 th, table.pad_0 td {padding:0;}
+table.padt_0 th, table.padt_0 td {padding-top:0;}
+
+
+
+/* ###################### Misc ###################### */
+img {
+	max-width:100%;
+	height:auto;
+}
+
+ol, ul {
+	margin:0px;
+}
+.styled-bullets li {
+	list-style-type: disc;
+	margin: 0 0 $df_mar_h $df_mar;
+	color: $orange;
+
+	@media only screen and (min-width: $min_md) {
+		margin: 0 0 $df_mar $df_mar;
+	}
+	span {
+		color:$dark-grey;
+	}
+}
+ul.bullets {}
+ul.bullets li {
+	margin-left:20px;
+	list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAYAAAAx8TU7AAAALUlEQVQIW2NkwAIYYWIfozX/g9j8S68zggVhAjAFuAWRVcO1o9sFtwhZAqsgAEn3DPHJ5gbaAAAAAElFTkSuQmCC")
+}
+
+
+.link_0, .link_0 a{cursor:pointer;text-decoration:none;color:$df_color;}
+.link_0:hover, .link a:hover{cursor:pointer;text-decoration:none;}
+.link_0 span{color:$orange;}		/* This allows us to have a line that looks normal but has a link behind it and then highlight one area as a link but infact the whole sentance is clickable */
+.link_0 span:hover{text-decoration:underline;}
+
+
+/* @@@@@@@@@@@@@@ REVIEW All the classes below ########## */
+
+
+/* Misc */
+.clicky, .clicky2:hover, .click:hover{cursor:pointer;text-decoration:underline;}/*Clicky is to have the underline effect before hovering, clicky2 mimics an actual link*/
+.clicky2,{cursor:pointer;text-decoration:none;;}
+
+.no-link, .no-link a{cursor:pointer;text-decoration:none;color: $df_color;}
+.no-link:hover, .no-link a:hover{cursor:pointer;text-decoration:none;}
+
+
+.msgWarning{border:1px solid $med-red;padding:10px;margin-bottom:5px;}
+
+
