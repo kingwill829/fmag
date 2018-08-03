@@ -1,8 +1,9 @@
 <?php
 	$include_nav = $site_root . "/fmag/includes/nav.php";
 	$include_footer = $site_root . "/fmag/includes/footer.php";
-	$include_css = "http://localhost:81/fmag/core_assets/css/style.css";
-	$include_js = "http://localhost:81/fmag/core_assets/js/site.js";
+	$include_css = "http://192.168.2.222:81/fmag/core_assets/css/style.css";
+	$include_js = "http://192.168.2.222:81/fmag/core_assets/js/site.js";
+	
 
 ?>
 
@@ -21,6 +22,8 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="<?php echo($include_js); ?>" type="text/javascript"></script>
+	
+
 	
 	
 	<!-- Slick Slider -->

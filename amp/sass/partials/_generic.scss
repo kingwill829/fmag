@@ -1,0 +1,104 @@
+  		amp-img {
+  			max-width:100%;
+  			margin:0 auto;
+  		}
+  		.tac {text-align:center;}
+  		
+  		a {text-decoration:none;}
+
+/* ###################### Colours ###################### */
+.cd {color:$df_color;}
+
+.cg{color:$green;}								/*Green*/
+.cw{color:$white;}								/*White*/
+.co{color:$orange!important;}					/*Orange*/
+.co:visited{color:$orange;font-size:40px;}		/*Orange Visited*/
+.cr{color:$med-red;}							/*Red*/
+.cr:visited{color:$med-red;}					/*Red Visited*/
+
+.clg {color:$light-grey;}						/*Light Grey*/
+.cmg {color:$med-grey;}							/*Medium Grey*/
+.cdg {color:$dark-grey;}						/*Dark Grey*/
+
+.bco {background-color:$orange;}				/*Background Orange*/
+.bcg {background-color:$green;}					/*Background Green*/
+.bcr{background-color:$med-red;}				/*Background Red*/
+.bcb{background-color:$blue;} 					/*Background Blue*/
+.bclg {background-color:$light-grey;}
+.bcmg {background-color:$med-grey;}
+.bcdg {background-color:$dark-grey;}
+.bcf{background-color:$bggrey;} 		/*Background Colour faint*/
+
+/* ###################### Margins ###################### */
+/* Margin: 0px */
+.mar_0 {margin:0;}
+.mar_0i {margin:0!important;}
+.mart_0 {margin-top:0px;}
+.marb_0 {margin-bottom:0px;}
+.marl_0 {margin-left:0px;}
+.marr_0 {margin-right:0px;}
+/* Margin: default */
+.mart_d{margin-top:$df_mar;}
+.marr_d{margin-right:$df_mar;}
+.marb_d{margin-bottom:$df_mar;}
+.marl_d{margin-left:$df_mar;}
+	.martb_d{@extend .mart_d;@extend .marb_d;}.marlr_d{@extend .marr_d;@extend .marl_d;}
+/* Margin: half */
+.mart_h{margin-top:$df_mar_h;}
+.marb_h{margin-bottom:$df_mar_h;}
+.marr_h{margin-right:$df_mar_h;}
+.marl_h{margin-left:$df_mar_h;}
+	.martb_h{@extend .mart_h;@extend .marb_h;}.marlr_h{@extend .marr_h;@extend .marl_h;}
+/*		Only on set sizes */
+.mart-d{@media screen and (min-width: $min_sm) {margin-top:$df_mar;}}
+.marr-d{@media screen and (min-width: $min_sm) {margin-right:$df_mar;}}
+.marb-d{@media screen and (min-width: $min_sm) {margin-bottom:$df_mar;}}
+.marl-d{@media screen and (min-width: $min_sm) {margin-left:$df_mar;}}
+	.martb-d{@extend .mart-d;@extend .marb-d;}.marlr-d{@extend .marr-d;@extend .marl-d;}.mara-d{@extend .martb-d;@extend .marlr-d;}
+.mart-m{@media screen and (max-width: $max_xs) {margin-top:$df_mar;}}
+.marr-m{@media screen and (max-width: $max_xs) {margin-right:$df_mar;}}
+.marb-m{@media screen and (max-width: $max_xs) {margin-bottom:$df_mar;}}
+.marl-m{@media screen and (max-width: $max_xs) {margin-left:$df_mar;}}
+	.martb-m{@extend .mart-m;@extend .marb-m;}.marlr-m{@extend .marr-m;@extend .marl-m;}
+/* tablet margins */
+.mart-t{@media screen and (max-width: $max_sm) {margin-top:$df_mar;}}
+.marr-t{@media screen and (max-width: $max_sm) {margin-right:$df_mar;}}
+.marb-t{@media screen and (max-width: $max_sm) {margin-bottom:$df_mar;}}
+.marl-t{@media screen and (max-width: $max_sm) {margin-left:$df_mar;}}
+
+/****special cases - may want to expand this to all sizes ****/
+.marr-md{@media screen and (min-width: $min_md) {margin-right:$df_mar;}}
+
+
+/* ###################### Padding ###################### */
+/* Padding: 0px */
+.pad_0 {padding:0px;}
+.padt_0 {padding-top:0px;}
+.padb_0 {padding-bottom:0px;}
+.padl_0 {padding-left:0px;}
+.padr_0 {padding-right:0px;}
+	.padtb_0{@extend .padt_0;@extend .padb_0;}.padlr_0{@extend .padr_0;@extend .padl_0;}.pada_0{@extend .padtb_0;@extend .padlr_0;}
+/* Padding: default */
+.padt_d{padding-top:$df_pad;}
+.padr_d{padding-right:$df_pad;}
+.padb_d{padding-bottom:$df_pad;}
+.padl_d{padding-left:$df_pad;}
+	.padtb_d{@extend .padt_d;@extend .padb_d;}.padlr_d{@extend .padr_d;@extend .padl_d;}.pada_d{@extend .padtb_d;@extend .padlr_d;}
+/* Padding: half default */
+.padt_h{padding-top:$df_pad_h;}
+.padr_h{padding-right:$df_pad_h;}
+.padb_h{padding-bottom:$df_pad_h;}
+.padl_h{padding-left:$df_pad_h;}
+	.padtb_h{@extend .padt_h;@extend .padb_h;}.padlr_h{@extend .padr_h;@extend .padl_h;}.pada_h{@extend .padtb_h;@extend .padlr_h;}
+/*		Only on set sizes */
+.padt-d{@media screen and (min-width: $min_sm) {padding-top:$df_pad;}}
+.padr-d{@media screen and (min-width: $min_sm) {padding-right:$df_pad;}}
+.padb-d{@media screen and (min-width: $min_sm) {padding-bottom:$df_pad;}}
+.padl-d{@media screen and (min-width: $min_sm) {padding-left:$df_pad;}}
+	.padtb-d{@extend .padt-d;@extend .padb-d;}.padlr-d{@extend .padr-d;@extend .padl-d;}.pada-d{@extend .padtb-d;@extend .padlr-d;}
+.padt-m{@media screen and (max-width: $max_xs) {padding-top:$df_pad;}}
+.padr-m{@media screen and (max-width: $max_xs) {padding-right:$df_pad;}}
+.padb-m{@media screen and (max-width: $max_xs) {padding-bottom:$df_pad;}}
+.padl-m{@media screen and (max-width: $max_xs) {padding-left:$df_pad;}}
+	.padtb-m{@extend .padt-m;@extend .padb-m;}.padlr-m{@extend .padr-m;@extend .padl-m;}
+  		

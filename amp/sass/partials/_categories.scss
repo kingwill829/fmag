@@ -1,0 +1,28 @@
+.top-copy .i-amphtml-accordion-header {
+	border:0px;
+	padding:0px;
+	background-color:white;
+}
+.top-copy .i-amphtml-accordion-content {
+	padding:0px;
+}
+amp-accordion section[expanded] .top-copy__read-more {
+	display:none;
+}
+ 
+.mobile-tools__pagination button {
+	width:48px;
+} 
+  		
+.product-thumbnail {
+	font-family: $headerfont;
+  font-size: $df_mar;
+  margin-bottom:$df_mar;
+}
+.product-thumbnail__image {
+	border: 1px solid #d5d6d8;
+  margin-bottom: $df_mar_h; 			
+}
+.product-thumbnail a {
+	color:$dark-grey;
+}

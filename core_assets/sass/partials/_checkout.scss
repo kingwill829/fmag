@@ -1,0 +1,47 @@
+.checkout-field {
+	position:relative;
+	margin-bottom:$df_mar;
+	
+	input {
+		border:1px solid $light-grey;
+	}
+}
+
+.checkout-field:last-child {
+	margin-bottom:0px;
+}
+
+.module-container--checkout h2 {
+	display: flex;
+  align-items: center;
+	i {
+	font-size:14px;
+	}
+}
+
+.credit-card--hidden {
+	display:none;
+}
+.checkout-field__delivery-method, .checkout-field__delivery-method-info {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.checkout-field__delivery-method {
+	border-bottom:1px solid $light-grey;
+	padding-bottom:$df_pad;
+	
+	input {
+		margin-right:10px;
+	}
+}
+
+.checkout-field__delivery-method:last-child {
+	border-bottom:0px;
+	padding-bottom:0px;
+}
+
+.form input {
+	margin-bottom:$df_mar;
+	border:1px solid $light-grey;
+}

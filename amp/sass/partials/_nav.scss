@@ -1,0 +1,25 @@
+.i-amphtml-accordion-content {
+	padding:0px $df_pad_h;
+}
+
+.amp-primary-nav {
+	width:75%;
+}
+nav h2.i-amphtml-accordion-header {
+	margin-bottom:$df_mar_h;
+	padding:$df_pad_h;
+	border-bottom:1px solid $light-grey2;
+}
+nav ul {
+	padding-left:0px;
+	margin-top:0px;
+}
+nav ul li {
+	list-style:none;
+	padding:$df_pad_h;
+	border-bottom:1px solid $light-grey2;
+}
+
+nav ul li a {
+	color:$dark-grey;
+}
