@@ -1,0 +1,28 @@
+h1,h2,h3,h4 {
+	font-family:verlag;
+	margin-bottom:$df_mar;
+	font-weight:400;
+}
+
+h1 {
+	font-size:1.6em;
+	line-height:1.166666666em;
+	}
+h2 {
+	font-size:1.3em;
+	line-height:1em;
+	}
+h3, h4 {
+	font-size:1.1em;
+	line-height:1.2;
+	}
+
+/* Links */
+a {
+	color:$orange;
+	text-decoration:none;
+}
+a:hover {
+	cursor:pointer;
+	text-decoration:underline;
+}

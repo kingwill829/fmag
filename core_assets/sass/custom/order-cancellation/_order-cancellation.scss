@@ -1,0 +1,84 @@
+.order-history__order.module-container {
+	padding:0px;
+}
+.order-history__item, .order-history__order-details th {
+  font-family: $headerfont;
+  font-weight: 700;
+  padding:$df_pad $df_pad $df_pad_h $df_pad;
+}
+.order-history__item:nth-child(odd), .order-history__order-details tr:nth-child(odd) {
+	background-color:$light-grey2;
+}
+.order-history__item span {
+	float:right;
+	font-family:$mainfont;
+	font-weight:400;
+}
+.order-history__order-details {
+	display:none;
+	
+}
+.order-history__order-details table {
+	width:100%;
+}
+.order-history__order-details th, .order-history__order-details td {
+	padding:$df_pad;
+	border-bottom:0px;
+}
+.orders-lightbox__option {
+	display:none;
+}
+.orders-lightbox__option--active {
+	display:block;
+}
+
+.orders-lightbox__option-form input {
+	width:100%;
+}
+.order-history__order-show {
+	display:flex;
+	align-items:center;
+}
+.order-history__order-show-icon {
+	display: inline-block;
+	margin-left:5px;
+}
+.order-history__order-show-icon span {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);		
+    transition:transform 500ms ease;
+}
+.order-history__order-show-icon--active span {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);	 
+    transition:transform 500ms ease;
+    color:$orange;
+}
+
+
+@media only screen and (min-width: 768px) {
+.order-history__item:nth-child(odd) {
+	background-color:initial;
+}
+.order-history__order {
+	display:flex;
+	justify-content:space-between;
+}
+.order-history__item {
+	display:inline-block;
+	margin-right:15px;
+}
+.order-history__item span {
+	float:none;
+	display:block;
+}
+.order-history__order-summary {
+	flex-grow: 1;
+}
+}

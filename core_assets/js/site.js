@@ -185,8 +185,27 @@ $('.checkout-field input').focus(function() {
 $('#revealPayment').click(function() {
 	$('.credit-card--hidden').slideToggle();
 });
+
+
+
+// Order Cancellation
+
+	$('.order-history__order-show').click(function() {
+		$(this).siblings('.order-history__order-details').slideToggle();
+		$(this).children('.order-history__order-show-icon').toggleClass('order-history__order-show-icon--active');
+	});	
 	
+	$(document).on("click", ".lightbox-button", function() {
+		var lightboxOption = "#" + $(this).attr('data-lightbox-option');
+		
+		$('.orders-lightbox__option--active').removeClass('orders-lightbox__option--active');		
+		$(lightboxOption).addClass('orders-lightbox__option--active');
+	});
 	
+	$(document).on("click", ".order-lightbox__back", function() {
+		$('.orders-lightbox__option--active').removeClass('orders-lightbox__option--active');		
+		$('#orders-lightbox-default').addClass('orders-lightbox__option--active');
+	});
 	
 });
 
@@ -195,6 +214,8 @@ $('#revealPayment').click(function() {
 
 
 
+
+// stuff from main site
 var delay = (function(){
 //Allows a $j command to be run after a set period of time eg. $j(window).resize(function() {delay(function(){alert(1);});
 	var timer = 0;

@@ -30,6 +30,28 @@ _i			: used to that this is a version of the parent class with !important (not a
 .bcdg {background-color:$dark-grey;}
 .bcf{background-color:$bggrey;} 		/*Background Colour faint*/
 
+/* Brand Colours */
+.brand--orange {
+	background-color:$orange;
+	color:white;
+}
+.brand--red {
+	background-color:$med-red;
+	color:white;
+}
+.brand--grey {
+	background-color:$dark-grey;
+	color:white;
+}
+.brand--blue {
+	background-color:$blue;
+	color:white;
+}
+.brand--green {
+	background-color:$green2;
+	color:white;
+}
+
 
 /* ###################### Fonts ###################### */
 .f-OS {font-family:$mainfont}
@@ -287,6 +309,7 @@ table.padt_0 th, table.padt_0 td {padding-top:0;}
 img {
 	max-width:100%;
 	height:auto;
+	vertical-align:bottom;
 }
 
 ol, ul {

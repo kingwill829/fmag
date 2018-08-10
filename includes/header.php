@@ -1,8 +1,8 @@
 <?php
 	$include_nav = $site_root . "/fmag/includes/nav.php";
 	$include_footer = $site_root . "/fmag/includes/footer.php";
-	$include_css = "http://192.168.2.222:81/fmag/core_assets/css/style.css";
-	$include_js = "http://192.168.2.222:81/fmag/core_assets/js/site.js";
+	$include_css = "/fmag/core_assets/css/style.css";
+	$include_js = "/fmag/core_assets/js/site.js";
 	
 
 ?>
@@ -16,7 +16,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	
-
+	<!-- Featherlight lightbox CSS -->
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="<?php echo($include_css); ?>" type="text/css" />
 	

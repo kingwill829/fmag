@@ -20,6 +20,15 @@
 
 
 @import "partials/_new-layout.scss";
-@import "custom/homepage-2018/_homepage-2018.scss";
-@import "custom/_googlepay.scss";
+
+@import "partials/_featherlight-popup.scss";
+
+
+@import "custom/homepage-2018/_homepage-2018.scss"; 
+@import "custom/order-cancellation/_order-cancellation.scss";
+
+@import "custom/checkout/_checkout.scss";
+@import "custom/checkout/_googlepay.scss";
+
+@import "custom/careers/_careers.scss";
 

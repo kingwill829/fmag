@@ -58,7 +58,12 @@
   			class="amp__sidebar"
   			>
   			<nav>
-			  	<amp-list src="nav.js" height="500" layout="fixed-height">
+			  	<amp-list 
+			  		width="auto"
+			  		src="nav.js" 
+			  		height="2000" 
+			  		layout="fixed-height">
+
 			  		<template type="amp-mustache">
 			  			
 								<amp-accordion disable-session-states>

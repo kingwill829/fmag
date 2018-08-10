@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html class="no-js no-svg">
+<head>
+	<meta charset="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	
+	<!-- Featherlight lightbox CSS -->
+	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	
+
+	
+	
+	<!-- Slick Slider -->
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		$('.order-history__order-show').click(function() {
+			$(this).siblings('.order-history__order-details').slideToggle();
+			$(this).children('.order-history__order-show-icon').toggleClass('order-history__order-show-icon--active');
+		});	
+		
+		$(document).on("click", ".lightbox-button", function() {
+			var lightboxOption = "#" + $(this).attr('data-lightbox-option');
+			
+			$('.orders-lightbox__option--active').removeClass('orders-lightbox__option--active');		
+			$(lightboxOption).addClass('orders-lightbox__option--active');
+		});
+		
+		$(document).on("click", ".order-lightbox__back", function() {
+			$('.orders-lightbox__option--active').removeClass('orders-lightbox__option--active');		
+			$('#orders-lightbox-default').addClass('orders-lightbox__option--active');
+		});	
+		});
+	</script>
+
+</head>
+
+<body>
+	
+<div class="container">	
+	<div class="col-md-12">
+		<h1>My Orders</h1>
+
+		<div class="order-history">
+			
+			<div class="order-history__order module-container">
+				<div class="order-history__order-summary">
+					<div class="marb_h">
+						<div class="order-history__item order-history__item-date">
+							Date: <span>16/11/2018</span>
+						</div>
+						<div class="order-history__item order-history__item-number">
+							Order Number: <span>6068984</span>
+						</div>
+						<div class="order-history__item order-history__item-amount">
+							Amount: <span>&pound;22.99</span>
+						</div>
+						<div class="order-history__item order-history__item-shipped">
+							Shipping: <span>Bob Jenks</span>
+						</div>
+						<div class="order-history__item order-history__item-amount">
+							Status: <span>Incomplete</span>
+						</div>
+					</div>
+					<div class="co order-history__order-show padlr_d padb_h">
+						<div>
+							View Order Details	
+						</div>
+						<div class="order-history__order-show-icon">
+							<span class="fa fa-plus">&nbsp;</span>
+						</div>
+					</div>
+					<div class="order-history__order-details">
+						
+						<h3 class="padlr_d">Order Details</h3>
+						<table class="marb_d">
+							<tr>
+								<th>Item</th>
+								<th>Qty</th>
+								<th>Price</th>
+							</tr>
+							
+							<tr>
+								<td>Dapper Shoe Shine Kit</td>
+								<td>1</td>
+								<td>&pound;10.99</td>
+							</tr>
+						
+							<tr>
+								<td>Inflatable Beer Cooler</td>
+								<td>1</td>
+								<td>&pound;7.99</td>
+							</tr>
+						</table>		
+						
+						<div class="padlr_d">
+							<div class="marb_d">
+								<h3>Payment Method</h3>
+								<div>
+									<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png"  width="50" style="padding-right:10px;" />
+									**** **** **** 6372
+								</div>
+							</div>	
+							<hr />
+							<div class="marb_d">
+								<h3>Delivery Address</h3>
+								<div>Bob Jenks</div>
+								<div>Northfield Road</div>
+								<div>Southam</div>
+								<div>CV47 0FG</div>
+								<div>United Kingdom</div>
+							</div>	
+							<hr />
+							<div class="marb_d">
+								<h3>Billing Address</h3>
+								<div>Bob Jenks</div>
+								<div>Northfield Road</div>
+								<div>Southam</div>
+								<div>CV47 0FG</div>
+								<div>United Kingdom</div>
+							</div>
+						</div>										
+					</div>
+				</div>
+				<div class="order-history__order-actions pada_d">
+					<button class="button marb_d" data-featherlight="lightbox.html">Amend Order</button>
+					<button class="button marb_h">Cancel Order</button>
+					<div>
+						You can amend your order for the next 22 minutes
+					</div>
+				</div>
+			</div>
+
+			<div class="order-history__order module-container">
+				<div class="order-history__order-summary">
+					<div class="marb_h">
+						<div class="order-history__item order-history__item-date">
+							Date: <span>16/11/2018</span>
+						</div>
+						<div class="order-history__item order-history__item-number">
+							Order Number: <span>6068984</span>
+						</div>
+						<div class="order-history__item order-history__item-amount">
+							Amount: <span>&pound;22.99</span>
+						</div>
+						<div class="order-history__item order-history__item-shipped">
+							Shipping: <span>Bob Jenks</span>
+						</div>
+						<div class="order-history__item order-history__item-amount">
+							Status: <span>Incomplete</span>
+						</div>
+					</div>
+					<div class="co order-history__order-show padlr_d padb_h">
+						<div>
+							View Order Details	
+						</div>
+						<div class="order-history__order-show-icon">
+							<span class="fa fa-plus">&nbsp;</span>
+						</div>
+					</div>
+					<div class="order-history__order-details">
+						
+						<h3 class="padlr_d">Order Details</h3>
+						<table class="marb_d">
+							<tr>
+								<th>Item</th>
+								<th>Qty</th>
+								<th>Price</th>
+							</tr>
+							
+							<tr>
+								<td>Dapper Shoe Shine Kit</td>
+								<td>1</td>
+								<td>&pound;10.99</td>
+							</tr>
+						
+							<tr>
+								<td>Inflatable Beer Cooler</td>
+								<td>1</td>
+								<td>&pound;7.99</td>
+							</tr>
+						</table>		
+						
+						<div class="padlr_d">
+							<div class="marb_d">
+								<h3>Payment Method</h3>
+								<div><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" /></div>
+							</div>	
+							<hr />
+							<div class="marb_d">
+								<h3>Delivery Address</h3>
+								<div>Bob Jenks</div>
+								<div>Northfield Road</div>
+								<div>Southam</div>
+								<div>CV47 0FG</div>
+								<div>United Kingdom</div>
+							</div>	
+							<hr />
+							<div class="marb_d">
+								<h3>Billing Address</h3>
+								<div>Bob Jenks</div>
+								<div>Northfield Road</div>
+								<div>Southam</div>
+								<div>CV47 0FG</div>
+								<div>United Kingdom</div>
+							</div>
+						</div>										
+					</div>
+				</div>
+			</div>
+
+
+		</div>		
+		
+	</div>
+</div>
+
+
+
+
+	<div class="band-newsletter mart_d">
+			<div class="container">
+				<div class="col-lg-12">
+					<div class="newsletter-form tac">
+						<h2>Sign Up To Our Newsletter</h2>
+						<div class="newsletter-form__container">
+						<div class="newsletter-form__signup">
+							<form method="POST" onsubmit="return newsletterSignUp();" id="signup-form">
+								<input type="email" name="email" id="email" placeholder="Email Address" data-emailcapturepoint="type = email">
+								<button class="newsletter-form__signup-button"><span>Join</span></button>
+							</form>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	
+	<footer class="band-footer">
+		<div class="container">
+			<div class="tac marb_d">
+				<img class="lazy" data-original="/site_media/images/general/payment-logos.svg" src="https://seo1/site_media/images/general/payment-logos.svg" width="385" height="45" alt="Payments Accepted: Visa, Mastercard and PayPal" title="Payments" />
+			</div>
+
+			<div class="col-sm-3 col-xs-12">
+				<div class="tac marb_d band-footer__links">
+					<h2>Help</h2>
+					<ul>
+						<li><a href="/information.asp">Help</a></li>
+						<li><a href="/contact-us.asp">Contact</a></li>
+						<li><a href="/customers/order-tracking.asp">Track My Order</a></li>
+						<li><a href="/returns">Returns Policy</a></li>
+						<li><a href="/delivery.asp">Delivery Information</a></li>
+						<li><a href="/loyalty-scheme.asp">Loyalty Points</a></li>
+						<li><a href="/privacy-policy.asp#security">Security</a></li>
+						<li><a href="/wishlist.html"><span class="fa fa-heart orange"></span> View saved items</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<div class="tac marb_d band-footer__links">
+					<h2>About</h2>
+					<ul>
+						<li><a href="/about.asp">About Find Me A Gift</a></li>
+						<li><a href="http://smile.findmeagift.co.uk/" target="_blank">Smile</a></li>
+						<li><a href="/topics/">Giftopedia</a></li>
+						<li><a href="http://smile.findmeagift.co.uk/competition/" target="_blank">Competitions</a></li>
+						<li><a href="/privacy-policy.asp">Privacy Policy</a></li>
+						<li><a href="/press.asp">Press Enquiries</a></li>
+						<li><a href="/jobs.asp">Careers</a></li>
+						<li><a href="/terms-and-conditions.asp">Terms &amp; Conditions</a></li>
+						<li><a href="/site-map.asp">Sitemap</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear-m"></div>
+
+			<div class="col-sm-6 col-xs-12">
+				<div class="tac band-footer__social-icons">
+					<h2>Follow Find Me a Gift</h2>
+					<a href="https://www.facebook.com/findmeagift" class="fab fa-facebook no-link" target="_blank"></a>
+					<a href="https://twitter.com/findmeagift" class="fab fa-twitter no-link" target="_blank"></a>
+					<a href="https://plus.google.com/+findmeagift/posts" class="fab fa-google-plus no-link" target="_blank"></a>
+					<a href="https://www.pinterest.com/findmeagift/" class="fab fa-pinterest no-link" target="_blank"></a>
+					<a href="https://www.youtube.com/channel/UC0nzc50J_VQtgdm44Ljd7Cw" class="fab fa-youtube no-link" target="_blank"></a>
+					<a href="https://www.instagram.com/findmeagift/" class="fab fa-instagram no-link" target="_blank"></a>
+				</div>
+
+				<div class="tac">
+					<span class="svr">&copy;</span> Find Me A Gift 2000 to 2018. All Rights Reserved.
+					<br />
+					<br />
+					Find Me A Gift: Northfield Road, Kineton Road Industrial Estate, Southam, Warwickshire, CV47 0FG, UK | Tel: 01926 818 800.
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<!-- Featherlight lightbox CDN JS Link -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+</body>

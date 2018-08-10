@@ -1,0 +1,32 @@
+.careers-grid {
+	display:flex;
+	flex-direction:column;
+}
+.careers-panel {
+	font-family:verlag;
+	min-height:200px;
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;	
+}
+
+.careers-panel__inner {
+	position:absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+  transform: translateX(-50%);	
+  font-size:2em;
+}
+
+
+@media screen and (min-width:$min_md) {
+.careers-grid {
+	flex-direction:row;
+}
+.careers-panel {
+	width:50%;
+}	
+	
+}

@@ -1,0 +1,27 @@
+.checkout-module {
+	display:flex;
+	justify-content:space-between;
+}
+.checkout-module__left {
+	width:5%;
+}
+.checkout-module__right {
+	width:90%;
+}
+
+.checkout-module table {
+	width:100%;
+}
+
+.checkout-module th {
+  font-family: $headerfont;
+  font-weight: 700;
+  padding:$df_pad $df_pad $df_pad_h $df_pad;
+}
+.checkout-module tr:nth-child(odd) {
+	background-color:$light-grey2;
+}
+.checkout-module th, .checkout-module td {
+	padding:$df_pad;
+	border-bottom:0px;
+}

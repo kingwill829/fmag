@@ -76,5 +76,7 @@
 		</div>
 	</footer>
 
+<!-- Featherlight lightbox CDN JS Link -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
