@@ -2,10 +2,18 @@
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
   border-radius: 2px;
   padding:$df_pad;
+  background-color:white;
   margin-bottom:$df_mar;
-  input {
+  input, select {
   	width:100%;
+  	border: 1px solid #d5d6d8;
   }
 }
+
+.split-component {
+	display:flex;
+	align-items:center;	
+}
+
 
 

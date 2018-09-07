@@ -19,7 +19,7 @@
 	<footer class="band-footer">
 		<div class="container">
 			<div class="tac marb_d">
-				<img class="lazy" data-original="/site_media/images/general/payment-logos.svg" src="https://seo1/site_media/images/general/payment-logos.svg" width="385" height="45" alt="Payments Accepted: Visa, Mastercard and PayPal" title="Payments" />
+				<img src="https://www.findmeagift.co.uk/site_media/images/general/payment-logos.svg" width="385" height="45" alt="Payments Accepted: Visa, Mastercard and PayPal" title="Payments" />
 			</div>
 
 			<div class="col-sm-3 col-xs-12">
