@@ -20,7 +20,12 @@
 	<link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="<?php echo($include_css); ?>" type="text/css" />
-	
+
+	<?php
+		if (isset($include_custom_css)) :?>
+			<link rel="stylesheet" href="<?php echo($include_custom_css); ?>" type="text/css" />
+	<?php endif; ?>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="<?php echo($include_js); ?>" type="text/javascript"></script>
 	
