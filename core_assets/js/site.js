@@ -18,17 +18,7 @@ $(document).ready(function()
   });	
 	
 
-// Checkout
 
-// temp
-if ($('.checkout-field input')) {
-	$('body').addClass('checkout');
-}
-
-$('.checkout-field input').focus(function() {
-	$(this).parent().siblings('label').addClass('test');
-
-});
 
 	
 // New Nav Code
