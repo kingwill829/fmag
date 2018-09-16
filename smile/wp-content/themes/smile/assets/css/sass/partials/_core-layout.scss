@@ -1,0 +1,34 @@
+body {
+	background-color:#fafafa;
+}
+@media only screen and (max-width:$tablet--max) {
+	.container {
+		padding:0px 5px;
+	}
+}
+.module-container {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+    padding: $baseline;
+    margin-bottom: $baseline;
+    background-color:white;
+}
+
+.list-item__left {
+	width:35%;
+}
+.list-item__right {
+	width:65%;
+	padding-left:$baseline;
+}
+@media only screen and (min-width:$tablet--min) {
+	.list-item__left {
+		width:20%;
+	}
+	.list-item__right {
+		width:80%;
+	}
+}
+.list-item__left, .list-item__right {
+	float:left;
+}

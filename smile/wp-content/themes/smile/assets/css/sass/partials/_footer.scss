@@ -1,0 +1,36 @@
+#footer {
+	min-height:200px;
+	padding:$baseline;
+	background-color:white;
+	@media screen and (min-width:768px) {
+		display:flex;
+		justify-content:center;
+		justify-content:flex-end;
+	}
+
+	h3 {
+		border-bottom: 1px solid $grey--med;
+		padding-bottom:$baseline/2;
+	}
+}
+.footer__disclosure p {
+	font-size:14px;
+}
+
+.footer__nav ul li a {
+	font-size:14px;
+}
+.footer__brand, .footer__disclosure {
+	margin-bottom:$baseline;
+	@media screen and (min-width:768px) {
+		margin-left:20px;
+		width:25%;
+	}
+}
+.footer__brand img {
+	width:200px;
+	margin-bottom:$baseline;
+}
+#footerDate {
+	font-family:$heading;
+}
