@@ -1,10 +1,16 @@
 <?php
 	$site_root = $_SERVER['DOCUMENT_ROOT'];
-	$include_header = $site_root . "/fmag/includes/header.php";
+	$include_head = $site_root . "/fmag/includes/head.php";
+	$include_nav = $site_root . "/fmag/includes/nav.php";
+	$include_masthead = $site_root . "/fmag/includes/masthead.php";
+	$include_footer = $site_root . "/fmag/includes/footer.php";
+	$include_custom_css = "/fmag/core_assets/css/jobs.css";
 
-	include_once($include_header); 
-	include_once($include_nav);
+	include_once($include_head);
+	include_once($include_masthead);
+	include_once($include_nav); 
 ?>
+
 
 <div class="container mart_d">
 	<div class="col-sm-6 col-md-6">
@@ -110,79 +116,9 @@
 
 		<div class="product-recommendations">
 			<h2 class="tac">You might also like</h2>
-
-			<div class="col-xs-4 col-md-4 col-lg-4">
-				<div class="product-thumbnail">
-					<div class="product-thumbnail__sale-flag">
-						<span>Sale</span>
-					</div>	
-					<a href="/gifts/laser-cosmos-star-projector.html">	
-						<img class="lazyautosizes lazyloaded" src="//resources4.findmeagift.com/site_media/images/products/380/laser_cosmos_hero_mini.jpg">	
-						<div class="product-thumbnail__save">		
-							<span class="fa-stack">			
-								<i class="fa fa-circle fa-stack-2x icon-background"></i>			
-								<i class="fa fa-heart-o co fa-stack-1x" data-fmag-id="3463"></i> 		
-							</span> 	
-						</div> 
-					</a>	
-					<div class="product-thumbnail__title">
-						<a href="/gifts/laser-cosmos-star-projector.html">Laser Star Projector - Laser Cosmos</a>	
-					</div>	
-					<div class="product-thumbnail__price-wrap">		
-						<div class="product-thumbnail__price"><span>&pound;</span>76.89</div>
-						<div class="product-thumbnail__was-price">&pound;158.99</div>	
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-4 col-md-4 col-lg-4">
-				<div class="product-thumbnail">
-					<div class="product-thumbnail__sale-flag">
-						<span>Sale</span>
-					</div>	
-					<a href="/gifts/laser-cosmos-star-projector.html">	
-						<img class="lazyautosizes lazyloaded" src="//resources4.findmeagift.com/site_media/images/products/380/laser_cosmos_hero_mini.jpg">	
-						<div class="product-thumbnail__save">		
-							<span class="fa-stack">			
-								<i class="fa fa-circle fa-stack-2x icon-background"></i>			
-								<i class="fa fa-heart-o co fa-stack-1x" data-fmag-id="3463"></i> 		
-							</span> 	
-						</div> 
-					</a>	
-					<div class="product-thumbnail__title">
-						<a href="/gifts/laser-cosmos-star-projector.html">Laser Star Projector - Laser Cosmos</a>	
-					</div>	
-					<div class="product-thumbnail__price-wrap">		
-						<div class="product-thumbnail__price">&pound;76.89</div>
-						<div class="product-thumbnail__was-price">&pound;158.99</div>	
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-4 col-md-4 col-lg-4">
-				<div class="product-thumbnail">
-					<div class="product-thumbnail__sale-flag">
-						<span>Sale</span>
-					</div>	
-					<a href="/gifts/laser-cosmos-star-projector.html">	
-						<img class="lazyautosizes lazyloaded" src="//resources4.findmeagift.com/site_media/images/products/380/laser_cosmos_hero_mini.jpg">	
-						<div class="product-thumbnail__save">		
-							<span class="fa-stack">			
-								<i class="fa fa-circle fa-stack-2x icon-background"></i>			
-								<i class="fa fa-heart-o co fa-stack-1x" data-fmag-id="3463"></i> 		
-							</span> 	
-						</div> 
-					</a>	
-					<div class="product-thumbnail__title">
-						<a href="/gifts/laser-cosmos-star-projector.html">Laser Star Projector - Laser Cosmos</a>	
-					</div>	
-					<div class="product-thumbnail__price-wrap">		
-						<div class="product-thumbnail__price">&pound;76.89</div>
-						<div class="product-thumbnail__was-price">&pound;158.99</div>	
-					</div>
-				</div>
-			</div>
-
+			<?php 
+				build_product_thumbnails($products);
+			?>
 		</div>
 	</div>
 

@@ -1,6 +1,11 @@
 <?php
+	$site_root = $_SERVER['DOCUMENT_ROOT'];
 	$include_css = "/fmag/core_assets/css/style.css";
 	$include_js = "/fmag/core_assets/js/site.js";
+	$include_functions = $site_root . "/fmag/core_assets/functions.php";
+	$include_products = $site_root . "/fmag/core_assets/data/products.php";
+	require $include_products;
+	include_once $include_functions;
 
 ?>
 
