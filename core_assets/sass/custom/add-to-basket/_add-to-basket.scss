@@ -1,0 +1,26 @@
+.featherlight .featherlight-content {
+	padding:$df_pad_h;
+}
+.slider__item {
+	margin-right:10px;
+}
+.slider__item:last-child {
+	margin-right:0px;
+}
+.slick-arrow {
+	padding:0px $df_pad/2;
+	position:absolute;
+	top:50%;
+	z-index:9999;
+	background-color:white;
+}
+.slick-list {
+	width:95%;
+	margin:0 auto!important;
+}
+.slick-arrow--prev {
+	left:0px;
+}
+.slick-arrow--next {
+	right:0px;
+}
