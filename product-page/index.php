@@ -117,7 +117,7 @@
 		<div class="product-recommendations">
 			<h2 class="tac">You might also like</h2>
 			<?php 
-				build_product_thumbnails($products);
+				build_product_thumbnails($products,3);
 			?>
 		</div>
 	</div>

@@ -25,7 +25,96 @@
     text-overflow: ellipsis;
 }
 
+.top-related-cats h3 {
+    margin-bottom: 0px;
+}
+.top-related-cats ul {
+    display:none;
+}
+.top-related-cats ul li {
+    display:inline-block;
+}
+
+.top-related-cats ul li a {
+    border:1px solid $orange;
+    padding:$df_pad_h;
+    border-radius:5px;
+    display:block;
+    margin-bottom: $df_mar_h;
+}
+.top-related-cats ul li a:hover {
+    text-decoration:none;
+    background-color:$orange;
+    color:white;
+}
+.top-related-cats__icon--active {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: transform 500ms ease;    
+}
+
+
+.tnp-controls__count {
+    text-align: center;
+}
 .tnp-controls__refine, .tnp-controls__sort {
 	width:49%;
 	display:inline-block;
+}
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: $light-grey2; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav h2 {
+    margin-bottom: $df_mar_h;
+}
+.sidenav ul {
+    padding-left:10px;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media only screen and (min-width: $min_md) {
+.tnp-controls__count {
+    width:75%;
+    text-align: right;
+    display:inline-block;
+    padding:10px 10px 0px 0px;
+}
+
+.tnp-controls__refine {
+    display:none;
+}
+.tnp-controls__sort {
+    width:25%;
+}
+.sidenav {
+    height: auto; /* 100% Full-height */
+    width: auto; /* 0 width - change this with JavaScript */
+    position: relative; /* Stay in place */
+    background-color: initial; /* Black*/
+    padding-top: 0px; /* Place content 60px from the top */
+}
+
+.sidenav .closebtn {
+    display:none;
+}
 }
