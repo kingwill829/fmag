@@ -65,13 +65,35 @@
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<div class="marb_d">
-			<h2>Related Categories</h2>
+			<h2>By Recipient</h2>
 
 			<ul>
-				<li><a href="#">Personalised Gifts</a></li>
-				<li><a href="#">Secret Santa Gifts</a></li>
-				<li><a href="#">Stocking Fillers</a></li>
-				<li><a href="#">Wallets</a></li>
+				<li><a href="#">Husbands</a></li>
+				<li><a href="#">Boyfriends</a></li>
+				<li><a href="#">Dads</a></li>
+				<li><a href="#">Brothers</a></li>
+			</ul>
+		</div>
+
+		<div class="marb_d">
+			<h2>By Interest</h2>
+
+			<ul>
+				<li><a href="#">Cooking</a></li>
+				<li><a href="#">Music Lovers</a></li>
+				<li><a href="#">Adrenaline Junkies</a></li>
+				<li><a href="#">Geeks &amp; Nerds</a></li>
+			</ul>
+		</div>
+
+		<div class="marb_d">
+			<h2>Gift Type</h2>
+
+			<ul>
+				<li><a href="#">Romantic</a></li>
+				<li><a href="#">Personalised</a></li>
+				<li><a href="#">Gadgets</a></li>
+				<li><a href="#">Experiences</a></li>
 			</ul>
 		</div>
 
