@@ -1,23 +1,16 @@
+.marb_d2 {
+	margin-bottom:$df_mar * 2;
+}
+
 .landing-page-band {
 	background-repeat:no-repeat;
 	background-size: 100%;
 	background-position:center;
 	position:relative;
 }
-.landing-page-banner__headline {
-	position:absolute;
-	width:100%;
-	text-align:center;
-	top:0;
-	left:0;
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-	h1,h2 {
-		color:white;
-		text-shadow: 2px 2px $med-grey;
-	}
+
+.landing-panel {
+	position:relative;
 }
 
 
@@ -29,7 +22,7 @@
 	color:white;
 
 	position:absolute;
-	bottom:10px;
+	bottom:24px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
   	transform: translateX(-50%);
@@ -37,8 +30,6 @@
 
 .landing-panel__button:hover {
 	cursor:pointer;
-	transition:all 250ms ease;
-	border:2px solid $orange;
 }
 
 
@@ -49,9 +40,7 @@
 }
 
 @media screen and (min-width:992px) {
-.landing-page-band {
-	margin-top:-16px;
-}	
+
 .landing-page-banner__headline {
 	h1 {
 	font-size:3em;
@@ -78,15 +67,65 @@
   height: 200px;
   width: 200px;
   display: table-cell;
+  font-family: verlag;
   text-align: center;
   vertical-align: middle;
   border-radius: 50%; /* may require vendor prefixes */
-  background-color: $blue;
+  background-image: url('../../new-homepage/images/snow-pattern.png'), linear-gradient(-90deg, #4f0c30 , #721232); 
+  background-size: contain;
   padding:$df_pad;
-  color:white;
+  color:#fdce9e;
   font-size: 24px;
 }
 .circle:hover {
 	text-decoration:none;
-	background-color: $blue2;
+	background-image: url('../../new-homepage/images/snow-pattern.png'), linear-gradient(-90deg, #4f0c30 , #711145); 
 }
+
+.slider.swipe-elements {
+	display:flex;
+}
+.swipe-elements .slick-arrow {
+	display:flex;
+	align-items:center;
+}
+.icon-background {
+	color:#f5f5f5;
+}
+.swipe-elements img {
+	padding-right:10px;
+}
+
+
+.home-adam {
+	display:flex;
+}
+.home-adam__image {
+	width:15%;
+}
+  
+/* Blockquote */
+blockquote {
+  display:block;
+  padding: 16px 20px 16px 45px;
+  position: relative;
+  font-style: italic;
+  font-family:$headerfont;
+  font-weight:300;
+  }
+ blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-size: 60px;
+  font-weight: bold;    
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+} 

@@ -3099,6 +3099,11 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
 }
 
 /* line 1, ../sass/custom/homepage-2018/_new-homepage.scss */
+.marb_d2 {
+  margin-bottom: 32px;
+}
+
+/* line 5, ../sass/custom/homepage-2018/_new-homepage.scss */
 .landing-page-band {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -3106,25 +3111,12 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
   position: relative;
 }
 
-/* line 7, ../sass/custom/homepage-2018/_new-homepage.scss */
-.landing-page-banner__headline {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
-/* line 17, ../sass/custom/homepage-2018/_new-homepage.scss */
-.landing-page-banner__headline h1, .landing-page-banner__headline h2 {
-  color: white;
-  text-shadow: 2px 2px #808080;
+/* line 12, ../sass/custom/homepage-2018/_new-homepage.scss */
+.landing-panel {
+  position: relative;
 }
 
-/* line 24, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 17, ../sass/custom/homepage-2018/_new-homepage.scss */
 .landing-panel__button {
   padding: 8px;
   border-radius: 5px;
@@ -3132,20 +3124,18 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
   background-color: #f15b29;
   color: white;
   position: absolute;
-  bottom: 10px;
+  bottom: 24px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
-/* line 38, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 31, ../sass/custom/homepage-2018/_new-homepage.scss */
 .landing-panel__button:hover {
   cursor: pointer;
-  transition: all 250ms ease;
-  border: 2px solid #f15b29;
 }
 
-/* line 45, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 36, ../sass/custom/homepage-2018/_new-homepage.scss */
 .landing-page-banner__snippet {
   width: 90%;
   margin: 0 auto;
@@ -3153,49 +3143,106 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
 }
 
 @media screen and (min-width: 992px) {
-  /* line 52, ../sass/custom/homepage-2018/_new-homepage.scss */
-  .landing-page-band {
-    margin-top: -16px;
-  }
-
-  /* line 56, ../sass/custom/homepage-2018/_new-homepage.scss */
+  /* line 45, ../sass/custom/homepage-2018/_new-homepage.scss */
   .landing-page-banner__headline h1 {
     font-size: 3em;
   }
 
-  /* line 60, ../sass/custom/homepage-2018/_new-homepage.scss */
+  /* line 49, ../sass/custom/homepage-2018/_new-homepage.scss */
   .home-content__intro {
     width: 60%;
     margin: 0 auto;
   }
-  /* line 63, ../sass/custom/homepage-2018/_new-homepage.scss */
+  /* line 52, ../sass/custom/homepage-2018/_new-homepage.scss */
   .home-content__intro p {
     text-align: justify;
   }
 }
-/* line 72, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 61, ../sass/custom/homepage-2018/_new-homepage.scss */
 .landing-page__link {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 77, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 66, ../sass/custom/homepage-2018/_new-homepage.scss */
 .circle {
   height: 200px;
   width: 200px;
   display: table-cell;
+  font-family: verlag;
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
   /* may require vendor prefixes */
-  background-color: #54C3F1;
+  background-image: url("../../new-homepage/images/snow-pattern.png"), linear-gradient(-90deg, #4f0c30, #721232);
+  background-size: contain;
   padding: 16px;
-  color: white;
+  color: #fdce9e;
   font-size: 24px;
 }
 
-/* line 89, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 80, ../sass/custom/homepage-2018/_new-homepage.scss */
 .circle:hover {
   text-decoration: none;
-  background-color: #27aae1;
+  background-image: url("../../new-homepage/images/snow-pattern.png"), linear-gradient(-90deg, #4f0c30, #711145);
+}
+
+/* line 85, ../sass/custom/homepage-2018/_new-homepage.scss */
+.slider.swipe-elements {
+  display: flex;
+}
+
+/* line 88, ../sass/custom/homepage-2018/_new-homepage.scss */
+.swipe-elements .slick-arrow {
+  display: flex;
+  align-items: center;
+}
+
+/* line 92, ../sass/custom/homepage-2018/_new-homepage.scss */
+.icon-background {
+  color: #f5f5f5;
+}
+
+/* line 95, ../sass/custom/homepage-2018/_new-homepage.scss */
+.swipe-elements img {
+  padding-right: 10px;
+}
+
+/* line 100, ../sass/custom/homepage-2018/_new-homepage.scss */
+.home-adam {
+  display: flex;
+}
+
+/* line 103, ../sass/custom/homepage-2018/_new-homepage.scss */
+.home-adam__image {
+  width: 15%;
+}
+
+/* Blockquote */
+/* line 108, ../sass/custom/homepage-2018/_new-homepage.scss */
+blockquote {
+  display: block;
+  padding: 16px 20px 16px 45px;
+  position: relative;
+  font-style: italic;
+  font-family: verlag, Calibri, sans-serif;
+  font-weight: 300;
+}
+
+/* line 116, ../sass/custom/homepage-2018/_new-homepage.scss */
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-size: 60px;
+  font-weight: bold;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+}
+
+/* line 128, ../sass/custom/homepage-2018/_new-homepage.scss */
+blockquote::after {
+  /*Reset to make sure*/
+  content: "";
 }

@@ -4,8 +4,8 @@ $(document).ready(function()
   $('.slider').slick({
 	  infinite: 			false,
 	  slidesToShow: 	2.5,
-	  prevArrow:			'<div class="slick-arrow--prev"><span class="fa fa-chevron-left"></span></div>',
-	  nextArrow:			'<div class="slick-arrow--next"><span class="fa fa-chevron-right"></span></div>',
+	  prevArrow:			'<div class="slick-arrow--prev"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x icon-background"></i><i class="fa fa-chevron-left fa-stack-1x"></i></span></div>',
+	  nextArrow:			'<div class="slick-arrow--next"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x icon-background"></i><i class="fa fa-chevron-right fa-stack-1x"></i></span></div>',
 	  mobileFirst:		true,
 	  responsive: [
 	  {
@@ -16,6 +16,7 @@ $(document).ready(function()
 	  }
 	  ]
   });	
+
 	
 
 
