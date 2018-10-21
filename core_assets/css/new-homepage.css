@@ -3116,7 +3116,13 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
   position: relative;
 }
 
-/* line 17, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 16, ../sass/custom/homepage-2018/_new-homepage.scss */
+.landing-panel--primary .landing-panel__button {
+  font-size: 1.3em;
+  padding: 16px;
+}
+
+/* line 20, ../sass/custom/homepage-2018/_new-homepage.scss */
 .landing-panel__button {
   padding: 8px;
   border-radius: 5px;
@@ -3128,18 +3134,14 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-}
-
-/* line 31, ../sass/custom/homepage-2018/_new-homepage.scss */
-.landing-panel__button:hover {
-  cursor: pointer;
+  width: fit-content;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* line 36, ../sass/custom/homepage-2018/_new-homepage.scss */
-.landing-page-banner__snippet {
-  width: 90%;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.8);
+.landing-panel__button:hover {
+  cursor: pointer;
+  background-color: #fb7244;
 }
 
 @media screen and (min-width: 992px) {
@@ -3149,25 +3151,53 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
   }
 
   /* line 49, ../sass/custom/homepage-2018/_new-homepage.scss */
-  .home-content__intro {
+  .home__intro p {
     width: 60%;
     margin: 0 auto;
   }
-  /* line 52, ../sass/custom/homepage-2018/_new-homepage.scss */
-  .home-content__intro p {
-    text-align: justify;
-  }
 }
-/* line 61, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 55, ../sass/custom/homepage-2018/_new-homepage.scss */
+.landing-page__links {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 60, ../sass/custom/homepage-2018/_new-homepage.scss */
 .landing-page__link {
   display: inline-block;
+  width: 98%;
   margin-right: 10px;
 }
 
 /* line 66, ../sass/custom/homepage-2018/_new-homepage.scss */
+.landing-page__button {
+  font-family: verlag;
+  text-align: center;
+  background-image: url("../../new-homepage/images/snow-pattern.png"), linear-gradient(-90deg, #4f0c30, #721232);
+  background-size: contain;
+  padding: 8px;
+  color: #fdce9e;
+  font-size: 18px;
+  transition: all ease 500ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+}
+
+/* line 80, ../sass/custom/homepage-2018/_new-homepage.scss */
+.landing-page__button:hover {
+  text-decoration: none;
+  background-image: url("../../new-homepage/images/snow-pattern.png"), linear-gradient(-90deg, #4f0c30, #b14066);
+  background-position-y: 5px;
+  transition: all ease 500ms;
+}
+
+/* line 87, ../sass/custom/homepage-2018/_new-homepage.scss */
 .circle {
-  height: 200px;
-  width: 200px;
+  height: 10vw;
+  width: 10vw;
   display: table-cell;
   font-family: verlag;
   text-align: center;
@@ -3176,50 +3206,66 @@ button.wait, .wait.button__cta, .wait.button__yes, .wait.button__sub, .wait.butt
   /* may require vendor prefixes */
   background-image: url("../../new-homepage/images/snow-pattern.png"), linear-gradient(-90deg, #4f0c30, #721232);
   background-size: contain;
-  padding: 16px;
+  padding: 8px;
   color: #fdce9e;
-  font-size: 24px;
+  font-size: 18px;
+  transition: all ease 500ms;
 }
 
-/* line 80, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 102, ../sass/custom/homepage-2018/_new-homepage.scss */
 .circle:hover {
   text-decoration: none;
-  background-image: url("../../new-homepage/images/snow-pattern.png"), linear-gradient(-90deg, #4f0c30, #711145);
+  background-image: url("../../new-homepage/images/snow-pattern.png"), linear-gradient(-90deg, #4f0c30, #b14066);
+  background-position-y: 5px;
+  transition: all ease 500ms;
 }
 
-/* line 85, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 110, ../sass/custom/homepage-2018/_new-homepage.scss */
+.carousel__icon {
+  display: flex;
+  align-items: center;
+}
+
+/* line 115, ../sass/custom/homepage-2018/_new-homepage.scss */
 .slider.swipe-elements {
   display: flex;
 }
 
-/* line 88, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 118, ../sass/custom/homepage-2018/_new-homepage.scss */
 .swipe-elements .slick-arrow {
   display: flex;
   align-items: center;
 }
 
-/* line 92, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 122, ../sass/custom/homepage-2018/_new-homepage.scss */
 .icon-background {
   color: #f5f5f5;
 }
 
-/* line 95, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 125, ../sass/custom/homepage-2018/_new-homepage.scss */
 .swipe-elements img {
   padding-right: 10px;
 }
 
-/* line 100, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 129, ../sass/custom/homepage-2018/_new-homepage.scss */
 .home-adam {
-  display: flex;
+  background-color: #f5f5f5;
+  padding: 16px;
 }
 
-/* line 103, ../sass/custom/homepage-2018/_new-homepage.scss */
-.home-adam__image {
-  width: 15%;
+/* line 133, ../sass/custom/homepage-2018/_new-homepage.scss */
+.home-adam__image img {
+  width: 300px;
 }
 
+@media only screen and (min-width: 768px) {
+  /* line 137, ../sass/custom/homepage-2018/_new-homepage.scss */
+  .home-adam__inner {
+    display: flex;
+  }
+}
 /* Blockquote */
-/* line 108, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 143, ../sass/custom/homepage-2018/_new-homepage.scss */
 blockquote {
   display: block;
   padding: 16px 20px 16px 45px;
@@ -3229,7 +3275,7 @@ blockquote {
   font-weight: 300;
 }
 
-/* line 116, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 151, ../sass/custom/homepage-2018/_new-homepage.scss */
 blockquote::before {
   content: "\201C";
   /*Unicode for Left Double Quote*/
@@ -3241,7 +3287,7 @@ blockquote::before {
   left: 10px;
 }
 
-/* line 128, ../sass/custom/homepage-2018/_new-homepage.scss */
+/* line 163, ../sass/custom/homepage-2018/_new-homepage.scss */
 blockquote::after {
   /*Reset to make sure*/
   content: "";

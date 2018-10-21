@@ -20,7 +20,6 @@
 						</div>	
 						<div class="product-thumbnail__price-wrap">		
 							<div class="product-thumbnail__price"><span>&pound;</span><?php echo $product["price"]; ?></div>
-							<div class="product-thumbnail__was-price">&pound;<?php echo $product["was_price"]; ?></div>	
 						</div>
 					</div>
 				</div>

@@ -4,7 +4,7 @@
 	$include_nav = $site_root . "/fmag/includes/nav.php";
 	$include_masthead = $site_root . "/fmag/includes/masthead.php";
 	$include_footer = $site_root . "/fmag/includes/footer.php";
-	$include_custom_css = "/fmag/core_assets/css/jobs.css";
+	$include_custom_css = "/fmag/core_assets/css/new-product-page.css";
 
 	include_once($include_head);
 	include_once($include_masthead);
@@ -13,22 +13,53 @@
 
 
 <div class="container mart_d">
-	<div class="col-sm-6 col-md-6">
-		<div class="product-image">
+	<div class="col-sm-6 col-md-7">
+		<div class="main-product-image marb_d">
+			<div class="product-image__thumbs">
+				<div class="product-image__thumbs--0 product-image__thumbs--active">
+					<img src="https://resources4.findmeagift.com/site_media/images/products/p_thumb/shv001_forget_me_not_heart_pendant_lifestyle_1800_1.jpg" alt="main image thumb 1" />
+				</div>
+
+				<div class="product-image__thumbs--1">
+					<img src="https://resources2.findmeagift.com/site_media/images/products/p_thumb/shv001_forget_me_not_heart_pendant_lifestyle_1800_2.jpg" alt="main image thumb 2" />
+				</div>
+
+				<div class="product-image__thumbs--2">
+					<img src="https://resources4.findmeagift.com/site_media/images/products/p_thumb/shv001_forget_me_not_heart_pendant_lifestyle3_1800.jpg" alt="main image thumb 3" />
+				</div>
+			</div>
+
 			<div class="product-image__main">
-				<img src="https://resources1.findmeagift.com/site_media/images/products/p_main/ccp120-star-wb-amz-1001x1001.jpg" />
-			</div>
-			<div class="product-image__thumbnails">
-				<div class="product-image__thumb">
-					<img src="https://resources1.findmeagift.com/site_media/images/products/p_main/ccp120-star-wb-amz-1001x1001.jpg" />
+				<div class="siema">
+					<div data-product-image="0">
+						<img src="https://resources3.findmeagift.com/site_media/images/products/p_main/shv001_forget_me_not_heart_pendant_lifestyle_1800_1.jpg" alt="main image 1" />
+					</div>
+					<div data-product-image="1">
+						<img src="https://resources2.findmeagift.com/site_media/images/products/p_main/shv001_forget_me_not_heart_pendant_lifestyle_1800_2.jpg" alt="main image 2" />
+					</div>
+					<div data-product-image="2">
+						<img src="https://resources4.findmeagift.com/site_media/images/products/p_main/shv001_forget_me_not_heart_pendant_lifestyle3_1800.jpg" alt="main image 3"/>
+					</div>
 				</div>
-				<div class="product-image__thumb">
-					<img src="https://resources1.findmeagift.com/site_media/images/products/p_main/ccp120-star-wb-amz-1001x1001.jpg" />
+				<div class="main-product-image__icon prev">
+					<span class="fa-stack">
+					  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-chevron-left fa-stack-1x"></i>
+					</span>
+				</div>
+
+				<div class="main-product-image__icon next">
+					<span class="fa-stack">
+					  <i class="fa fa-circle fa-stack-2x icon-background"></i>
+					  <i class="fa fa-chevron-right fa-stack-1x"></i>
+					</span>
 				</div>
 			</div>
+
+
 		</div>
 	</div>
-	<div class="col-sm-6 col-md-6">
+	<div class="col-sm-6 col-md-5">
 		<div class="product-detail">
 			<div class="product-detail__header">
 				<div class="product-detail__heading">
@@ -58,10 +89,6 @@
 
 		<div class="product-detail">
 			<div class="product-detail__buy">
-				<div class="product-detail__input-text">
-					<label>Please enter the recipient's name</label>
-					<input type="text" placeholder="Recipient Name" class="marb_h" />
-				</div>
 				<button class="product-detail__buy-button button__cta marb_d">Add to basket <span class="fa fa-chevron-right"></span></button>
 			</div>
 			<div class="product-detail__quantity marb_h">
@@ -80,7 +107,7 @@
 				<div class="product-detail__info-item product-detail__stock marb_h">
 					<span class="fa fa-check cg">&nbsp;</span>In Stock
 				</div>
-
+				<!--
 				<div class="product-detail__info-item product-detail__stock marb_h">
 					<span class="fa fa-times co">&nbsp;</span>Temporarily Unavailable
 				</div>
@@ -100,13 +127,21 @@
 				<div class="product-detail__info-item product-detail__dispatch marb_d">
 					<span class="fas fa-shipping-fast">&nbsp;</span>Dispatched with 48 hours
 				</div>
+			-->
 
-				<div class="product-detail__social marb_d">
-					<span class="fa fa-whatsapp"></span>
-					<span class="fa fa-facebook"></span>
-					<span class="fa fa-twitter"></span>
-					<span class="fa fa-instagram"></span>
-					<span class="fa fa-pinterest"></span>
+				<div class="social-share">
+					<a href="#"  class="social-share__facebook" target="_blank">
+						<i class="fab fa-facebook-square"></i>
+					</a>
+					<a href="#" class="social-share__twitter" target="_blank">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="#" class="social-share__messenger" target="_blank">
+						<i class="fab fa-facebook-messenger"></i>
+					</a>
+					<a href="#" data-action="share/whatsapp/share" class="social-share__whatsapp" target="_blank">
+						<i class="fab fa-whatsapp"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -263,3 +298,30 @@
 <?php
 	include_once($include_footer);
 ?>
+<script src="siema.min.js"></script>
+<script>
+ const mySiema = new Siema({
+
+ });
+
+
+	$('.main-product-image__icon').click(function() {		
+
+		if ($(this).hasClass('next')) {
+			mySiema.next();
+		} else {
+			mySiema.prev();
+		}
+	})
+
+	$('.product-image__thumbs div').click(function() {
+		var activeThumb = $(this);
+		var activeThumbIndex = activeThumb.index()
+
+		mySiema.goTo(activeThumbIndex);
+	})
+
+
+
+
+</script>

@@ -13,7 +13,10 @@
 	position:relative;
 }
 
-
+.landing-panel--primary .landing-panel__button {
+	font-size:1.3em;
+	padding:$df_pad;
+}
 .landing-panel__button {
 	padding:$df_pad/2;
 	border-radius:5px;
@@ -26,18 +29,15 @@
 	left: 50%;
 	-webkit-transform: translateX(-50%);
   	transform: translateX(-50%);
+  	width: fit-content;
+  	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 .landing-panel__button:hover {
 	cursor:pointer;
+	background-color:#fb7244;
 }
 
-
-.landing-page-banner__snippet {
-	width:90%;
-	margin:0 auto;
-	background-color: rgba(255,255,255,0.8);
-}
 
 @media screen and (min-width:992px) {
 
@@ -46,26 +46,47 @@
 	font-size:3em;
 		}	
 }
-.home-content__intro {
+.home__intro p {
 	width:60%;
 	margin:0 auto;
-	p {
-		text-align: justify;
-	}
-	}
+}
 }
 
 .landing-page__links {
-
+	position:relative;
+	display:flex;
+	justify-content:space-between;
 }
 .landing-page__link {
 	display:inline-block;
+	width:98%;
  	margin-right:10px;
 }
 
+.landing-page__button {
+  font-family: verlag;
+  text-align: center;
+  background-image: url('../../new-homepage/images/snow-pattern.png'), linear-gradient(-90deg, #4f0c30 , #721232); 
+  background-size: contain;
+  padding:$df_pad_h;
+  color:#fdce9e;
+  font-size: 18px;
+  transition:all ease 500ms;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  min-height: 100px;
+}
+.landing-page__button:hover {
+	text-decoration:none;
+	background-image: url('../../new-homepage/images/snow-pattern.png'), linear-gradient(-90deg, #4f0c30 , #b14066);
+	background-position-y:5px;
+	transition:all ease 500ms;
+}
+
 .circle {
-  height: 200px;
-  width: 200px;
+  height: 10vw;
+  width: 10vw;
   display: table-cell;
   font-family: verlag;
   text-align: center;
@@ -73,13 +94,22 @@
   border-radius: 50%; /* may require vendor prefixes */
   background-image: url('../../new-homepage/images/snow-pattern.png'), linear-gradient(-90deg, #4f0c30 , #721232); 
   background-size: contain;
-  padding:$df_pad;
+  padding:$df_pad_h;
   color:#fdce9e;
-  font-size: 24px;
+  font-size: 18px;
+  transition:all ease 500ms;
 }
 .circle:hover {
 	text-decoration:none;
-	background-image: url('../../new-homepage/images/snow-pattern.png'), linear-gradient(-90deg, #4f0c30 , #711145); 
+	background-image: url('../../new-homepage/images/snow-pattern.png'), linear-gradient(-90deg, #4f0c30 , #b14066);
+	background-position-y:5px;
+	transition:all ease 500ms;
+}
+
+
+.carousel__icon {
+	display:flex;
+	align-items:center;
 }
 
 .slider.swipe-elements {
@@ -96,12 +126,17 @@
 	padding-right:10px;
 }
 
-
 .home-adam {
-	display:flex;
+	background-color:$light-grey2;
+	padding:$df_pad;
 }
-.home-adam__image {
-	width:15%;
+.home-adam__image img {
+	width:300px;
+}
+@media only screen and (min-width: $min_sm) {
+	.home-adam__inner {
+		display:flex;
+	}
 }
   
 /* Blockquote */
